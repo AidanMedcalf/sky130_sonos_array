@@ -50,10 +50,9 @@ jobs:
             uses: actions/upload-artifact@v2
             with:
               name: error
-              path: |
-                /home/runner/work/caravel_user_project/caravel_user_project/mpw_precheck_result/logs/*
+              path: /home/runner/work/caravel_user_project/caravel_user_project/mpw_precheck_result/logs/*
 
-  mpw_precheck_sky130B:
+    mpw_precheck_sky130B:
         timeout-minutes: 720
         runs-on: ubuntu-latest
         steps:
