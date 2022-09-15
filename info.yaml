@@ -1,0 +1,17 @@
+---
+project:
+  description: "A non-functional SONOS array plus a few padded-out SONOS cells for testing."
+  foundry: "SkyWater"
+  git_url: "https://github.com/AidanMedcalf/sky130_sonos_array.git"
+  organization: "University of Dallas"
+  organization_url: "https://udallas.edu"
+  owner: "University of Dallas"
+  process: "SKY130"
+  project_name: "sky130_sonos_array"
+  project_id: "00000000"
+  tags:
+    - "2209C"
+    - "SONOS"
+    - "Test"
+  category: "Test"
+  version: "1.00"
