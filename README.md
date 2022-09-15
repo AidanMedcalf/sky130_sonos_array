@@ -4,14 +4,11 @@
 
 ---
 
-| :exclamation: Important Note            |
-|-----------------------------------------|
+# Sky130 SONOS array
 
-## Please fill in your project documentation in this README.md file 
+Array of SONOS for analysis and testing. Consists of ? isolated SONOS cell with W= L= connected to (analog io ??).
 
-
-:warning: | Use this sample project for analog user projects. 
-:---: | :---
+The remaining space is a small SONOS array tiled to fill available space. All pins are grounded.
 
 ---
 
