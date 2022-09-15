@@ -1,0 +1,124 @@
+magic
+tech sky130A
+timestamp 1663090256
+<< checkpaint >>
+rect -548 -764 1700 1766
+<< error_s >>
+rect 27 -94 117 -50
+rect 171 -94 261 -50
+rect 315 -94 405 -50
+rect 459 -94 549 -50
+rect 603 -94 693 -50
+rect 747 -94 837 -50
+rect 891 -94 981 -50
+rect 1035 -94 1125 -50
+rect 27 14 117 58
+rect 171 14 261 58
+rect 315 14 405 58
+rect 459 14 549 58
+rect 603 14 693 58
+rect 747 14 837 58
+rect 891 14 981 58
+rect 1035 14 1125 58
+rect 27 252 117 296
+rect 171 252 261 296
+rect 315 252 405 296
+rect 459 252 549 296
+rect 603 252 693 296
+rect 747 252 837 296
+rect 891 252 981 296
+rect 1035 252 1125 296
+rect 27 360 117 404
+rect 171 360 261 404
+rect 315 360 405 404
+rect 459 360 549 404
+rect 603 360 693 404
+rect 747 360 837 404
+rect 891 360 981 404
+rect 1035 360 1125 404
+rect 27 598 117 642
+rect 171 598 261 642
+rect 315 598 405 642
+rect 459 598 549 642
+rect 603 598 693 642
+rect 747 598 837 642
+rect 891 598 981 642
+rect 1035 598 1125 642
+rect 27 706 117 750
+rect 171 706 261 750
+rect 315 706 405 750
+rect 459 706 549 750
+rect 603 706 693 750
+rect 747 706 837 750
+rect 891 706 981 750
+rect 1035 706 1125 750
+rect 27 944 117 988
+rect 171 944 261 988
+rect 315 944 405 988
+rect 459 944 549 988
+rect 603 944 693 988
+rect 747 944 837 988
+rect 891 944 981 988
+rect 1035 944 1125 988
+rect 27 1052 117 1096
+rect 171 1052 261 1096
+rect 315 1052 405 1096
+rect 459 1052 549 1096
+rect 603 1052 693 1096
+rect 747 1052 837 1096
+rect 891 1052 981 1096
+rect 1035 1052 1125 1096
+<< dnwell >>
+rect 0 -32 1 177
+<< nwell >>
+rect 1569 -633 1608 1635
+<< poly >>
+rect 0 14 1 58
+rect 0 100 1 130
+use sonos_array_corner sonos_array_corner_1
+timestamp 1663090256
+transform 1 0 0 0 1 0
+box -548 -764 138 -78
+use sonos_array_corner sonos_array_corner_2
+timestamp 1663090256
+transform 1 0 0 0 -1 1002
+box -548 -764 138 -78
+use sonos_array_corner sonos_array_corner_3
+timestamp 1663090256
+transform -1 0 1152 0 1 0
+box -548 -764 138 -78
+use sonos_array_corner sonos_array_corner_4
+timestamp 1663090256
+transform -1 0 1152 0 -1 1002
+box -548 -764 138 -78
+use sonos_cell sonos_cell_1
+array 0 7 144 0 3 346
+timestamp 1663090256
+transform 1 0 72 0 1 79
+box -152 -206 528 474
+use sonos_cell sonos_cell_2
+array 0 7 144 0 3 -346
+timestamp 1663090256
+transform 1 0 72 0 -1 -115
+box -152 -206 528 474
+use sonos_endcap_lr sonos_endcap_lr_1
+array 0 0 417 0 3 346
+timestamp 1663090256
+transform 1 0 0 0 1 0
+box -548 -292 138 388
+use sonos_endcap_lr sonos_endcap_lr_2
+array 0 0 417 0 3 346
+timestamp 1663090256
+transform -1 0 1152 0 -1 1002
+box -548 -292 138 388
+use sonos_endcap_tb sonos_endcap_tb_1
+array 0 7 144 0 0 154
+timestamp 1663090256
+transform 1 0 204 0 1 215
+box -284 -979 396 -293
+use sonos_endcap_tb sonos_endcap_tb_2
+array 0 7 144 0 0 -154
+timestamp 1663090256
+transform 1 0 204 0 -1 787
+box -284 -979 396 -293
+<< end >>
