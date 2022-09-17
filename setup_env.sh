@@ -20,7 +20,7 @@ export OPENLANE_IMAGE_NAME=efabless/openlane:$OPENLANE_TAG
 export PDKPATH=$PDK_ROOT/$PDK
 
 export MGMT_AREA_ROOT=$install_dir/$caravel_dir_name/mgmt_core_wrapper
-export MCW_ROot=$MANAGEMENT_AREA_ROOT
+export MCW_ROOT=$MANAGEMENT_AREA_ROOT
 export DESIGNS=$install_dir/$caravel_dir_name
 export TARGET_PATH=$DESIGNS
 export CARAVEL_ROOT=$DESIGNS/caravel 

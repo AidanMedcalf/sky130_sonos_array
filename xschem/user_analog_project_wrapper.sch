@@ -112,7 +112,7 @@ C {devices/lab_wire.sym} 4650 -260 0 1 {name=l1 sig_type=std_logic lab=io_analog
 C {devices/lab_wire.sym} 4560 -170 0 0 {name=l3 sig_type=std_logic lab=io_analog[9]}
 C {devices/lab_wire.sym} 4650 -90 0 1 {name=l5 sig_type=std_logic lab=io_analog[10]}
 C {devices/lab_wire.sym} 4780 -170 0 1 {name=l7 sig_type=std_logic lab=vssa1}
-C {sonos_array_tied.sym} 3860 200 0 0 {name=x1[59999:0]}
+C {sonos_array_tied.sym} 3860 200 0 0 {name=x1}
 C {devices/lab_wire.sym} 3860 140 0 1 {name=l7 sig_type=std_logic lab=vssa2
 }
 C {devices/lab_wire.sym} 3750 190 0 0 {name=l7 sig_type=std_logic lab=vssa2

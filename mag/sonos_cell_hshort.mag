@@ -1,10 +1,19 @@
 magic
 tech sky130A
-timestamp 1663347420
+timestamp 1663450679
 << error_p >>
-rect 33 0 256 404
+rect -152 404 73 444
+rect -152 0 188 404
+rect -152 -40 73 0
 << dnwell >>
-rect -44 0 33 404
+rect -112 0 33 404
+<< psubdiff >>
+rect -112 346 -63 404
+rect -112 58 -100 346
+rect -75 58 -63 346
+rect -112 0 -63 58
+<< psubdiffcont >>
+rect -100 58 -75 346
 << poly >>
 rect -44 343 0 346
 rect -44 338 33 343
