@@ -1,0 +1,718 @@
+timestamp 1663450679
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sonos_cell_vshort sonos_cell_vshort_1[0:7:288][0:0:-116] 1 0 0 0 -1 808
+use sonos_cell_vshort sonos_cell_vshort_0[0:7:288][0:0:116] 1 0 0 0 1 2076
+use sonos_cell_hshort sonos_cell_hshort_1[0:0:-600][0:3:692] -1 0 2370 0 1 0
+use sonos_cell_hshort sonos_cell_hshort_0[0:0:600][0:3:692] 1 0 0 0 1 0
+use sonos_8x8 sonos_8x8_0 1 0 0 0 1 0
+node "li_n200_n220#" 3043 2480.05 -200 -220 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 599400 23976 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n224_n244#" 9712 0 -224 -244 pw 9502296 12380 0 0 0 0 0 0 0 0 149744 3840 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "dw_n224_n244#" 2633 28506.9 -224 -244 dnw 0 0 9502296 12380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "dw_n224_n244#" "w_n224_n244#" 28506.9
+cap "w_n224_n244#" "li_n200_n220#" 2955.12
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,2]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.203161
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.524952
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" -5.55112e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,1]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.644397
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_1/a_n90_n42#" 0.93917
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" -1.11022e-16
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[0,4]/sonos_cell_0/a_n90_n42#" 0.0300678
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_1/a_n90_n42#" 0.729215
+cap "sonos_cell_vshort_1[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[0,5]/sonos_cell_0/a_n90_n42#" 5.55112e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,4]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 1.66533e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,4]/sonos_cell_0/a_n90_n42#" 0.390543
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,2]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" -5.55112e-17
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[0,1]/sonos_cell_0/a_n90_n42#" 1.21434
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 3.46945e-18
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.346868
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.304062
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,1]/sonos_cell_0/a_n90_n42#" 1.21053
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[0,4]/sonos_cell_1/a_n90_n42#" 0.0300678
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,1]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.216169
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,4]/sonos_cell_1/a_n90_n42#" 0.390543
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" -2.77556e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,5]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 5.55112e-17
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,5]/sonos_cell_0/a_n90_n42#" 0.0407117
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_0/a_n90_n42#" 1.23779
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,6]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 2.77556e-17
+cap "sonos_cell_vshort_1[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[0,6]/sonos_cell_1/a_n90_n42#" -2.77556e-17
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,2]/sonos_cell_0/a_n90_n42#" 5.55112e-17
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_1/a_n90_n42#" 1.05622
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,1]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.203161
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_0/a_n90_n42#" 1.31496
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_1/a_n90_n42#" 1.31496
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,2]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.564873
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.116054
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,5]/sonos_cell_1/a_n90_n42#" 0.0407117
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_cell_vshort_1[0]/m1_0_824#" 260.154
+cap "sonos_cell_vshort_1[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_1/a_n90_n42#" 3.46945e-18
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,2]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.995983
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_cell_vshort_1[0]/m1_0_824#" 250.69
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.200904
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,2]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.644397
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,2]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 1.00998
+cap "sonos_cell_vshort_1[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_0/a_n90_n42#" 0.345954
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,2]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.392265
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,1]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.564873
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" -5.55112e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.210594
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,1]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.392265
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,1]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" -5.55112e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.11636
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_cell_vshort_1[0]/w_0_798#" 365.521
+cap "sonos_cell_vshort_1[0]/dw_0_798#" "sonos_cell_vshort_1[0]/w_0_798#" -4203.13
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_0/a_n90_n42#" 1.11872
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[0,2]/sonos_cell_0/a_n90_n42#" 1.17755
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,2]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.524952
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[0,1]/sonos_cell_1/a_n90_n42#" 1.03277
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.519119
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,2]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.216169
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.21115
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,2]/sonos_cell_0/a_n90_n42#" 1.00998
+cap "sonos_cell_vshort_1[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[0,4]/sonos_cell_0/a_n90_n42#" 2.77556e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,1]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.524952
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.203161
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,2]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" -1.11022e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.303261
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_0/a_n90_n42#" 0.729215
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,1]/sonos_cell_1/a_n90_n42#" 1.21053
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,1]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 2.77556e-17
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_0/a_n90_n42#" 5.55112e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,1]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" -1.11022e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,2]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.0063536
+cap "sonos_cell_vshort_1[0]/m1_0_824#" "sonos_cell_hshort_0[3]/a_n88_116#" 281.883
+cap "sonos_cell_vshort_1[0]/dw_0_798#" "sonos_cell_vshort_1[0]/w_0_798#" -4354.5
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[0,6]/sonos_cell_0/a_n90_n42#" 1.04641
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,6]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.203161
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,6]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" -2.77556e-17
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_cell_hshort_0[3]/a_n88_116#" 410.399
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 5.55112e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 5.55112e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,5]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 1.04267
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,2]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 1.38778e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,5]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" -1.11022e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,5]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.216169
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,5]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 1.04267
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,1]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 5.55112e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.216169
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 1.42389
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,4]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.718258
+cap "sonos_cell_vshort_1[0]/m1_0_824#" "sonos_cell_vshort_1[0]/w_0_798#" 289.338
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,5]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.203161
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,5]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.564873
+cap "sonos_cell_vshort_1[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_0/a_n90_n42#" -5.55112e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.203161
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 1.11022e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,5]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.644397
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,5]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.392265
+cap "sonos_cell_vshort_1[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_0/a_n90_n42#" 1.62357
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,2]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.0063536
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,4]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.564873
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,4]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.216169
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,5]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.864843
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 8.67362e-19
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,5]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 1.04641
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,5]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.524952
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" -1.11022e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" -3.46945e-18
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_0/a_n90_n42#" 1.04641
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,4]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.203161
+cap "sonos_cell_vshort_1[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,5]/sonos_cell_1/a_n90_n42#" -3.46945e-18
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,4]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.864843
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" -1.11022e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.33681
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,6]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 1.28427
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.718258
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.33681
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.00400313
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 1.42389
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 1.73472e-18
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.392265
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,6]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" -1.11022e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,1]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 1.11022e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,6]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.564873
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.00225735
+cap "sonos_cell_vshort_1[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_0/a_n90_n42#" 0.0119333
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.0104606
+cap "sonos_cell_vshort_1[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,6]/sonos_cell_1/a_n90_n42#" -3.46945e-18
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.392265
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.524952
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.564873
+cap "sonos_cell_vshort_1[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[0,4]/sonos_cell_0/a_n90_n42#" 0.644397
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 1.38778e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,5]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 5.55112e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,6]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 1.28427
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,6]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.864843
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.524952
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.00726417
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[0,4]/sonos_cell_0/a_n90_n42#" 1.04641
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_0/a_n90_n42#" 0.0116268
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.00960937
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,6]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.392265
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.864843
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.0058328
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,6]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.524952
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,6]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 5.55112e-17
+cap "sonos_cell_vshort_1[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[0,6]/sonos_cell_0/a_n90_n42#" 0.644397
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,6]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/m1_0_824#" 0.216169
+cap "sonos_cell_vshort_1[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,5]/sonos_cell_0/a_n90_n42#" -2.77556e-17
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_cell_hshort_1[0]/dw_n224_0#" -238.14
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_0/a_n90_n42#" 0.1873
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_1[0]/w_n224_0#" 0.0172277
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_0/a_n90_n244#" "sonos_cell_hshort_1[0]/w_n224_0#" 20.521
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,5]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_1[0]/w_n224_0#" 0.121117
+cap "sonos_cell_hshort_1[3]/a_n88_116#" "sonos_cell_hshort_1[0]/w_n224_0#" 56.0731
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[0,6]/sonos_cell_1/a_n90_n42#" 0.160585
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[0,6]/sonos_cell_0/a_n90_n42#" 0.160585
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[0,4]/sonos_cell_1/a_n90_n42#" 0.0720316
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_1[0]/w_n224_0#" 0.1873
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_1[0]/w_n224_0#" 0.0720316
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,5]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_1[0]/w_n224_0#" 0.121117
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_1/a_n90_n42#" 0.0172277
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_0/a_n90_n42#" 1.31496
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_1/a_n90_n42#" -5.55112e-17
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_0/a_n90_n42#" -2.77556e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,1]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 1.94289e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,1]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.167928
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,5]/sonos_cell_1/a_n90_n42#" 1.38778e-16
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_0/a_n90_n42#" 0.191381
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,5]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 1.38778e-16
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[2,1]/sonos_cell_0/a_n90_n42#" 0.167928
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,1]/sonos_cell_1/a_n90_n42#" 2.77556e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,5]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.0407117
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,2]/sonos_cell_0/a_n90_n42#" -1.38778e-16
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_cell_vshort_1[0]/w_0_798#" 118.19
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_0/a_n90_n42#" -1.11022e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.0300678
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_1/a_n90_n42#" 0.729215
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,2]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 1.00998
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,2]/sonos_cell_1/a_n90_n42#" -5.55112e-17
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[1,2]/sonos_cell_1/a_n90_n42#" -2.22045e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,4]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.390543
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.729215
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_1/a_n90_n42#" 5.55112e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_1/a_n90_n42#" 0.390543
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" -1.38778e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 2.77556e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,1]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 1.11022e-16
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[1,6]/sonos_cell_0/a_n90_n42#" -5.55112e-17
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,2]/sonos_cell_0/a_n90_n42#" 1.11022e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,2]/sonos_cell_1/a_n90_n42#" 1.00998
+cap "sonos_8x8_0/sonos_cell_mirrored_0[0,2]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 8.32667e-17
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[2,2]/sonos_cell_0/a_n90_n42#" 0.131139
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,5]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.0407117
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,5]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 1.38778e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_0/a_n90_n42#" 0.729215
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.729215
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_cell_vshort_1[0]/dw_0_798#" -5821.2
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,2]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.131139
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 1.31496
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_0/a_n90_n42#" 1.11022e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.390543
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_0/a_n90_n42#" 3.46945e-18
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,1]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.167928
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,2]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 3.05311e-16
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_1/a_n90_n42#" -8.88178e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[1,1]/sonos_cell_1/a_n90_n42#" 1.21053
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.191381
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_0/a_n90_n42#" 1.11022e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,4]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 1.38778e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.191381
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" -7.21645e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[1,1]/sonos_cell_0/a_n90_n42#" 1.21053
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_1/a_n90_n42#" 1.38778e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_0/a_n90_n42#" 1.31496
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_1/a_n90_n42#" 3.46945e-18
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,6]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" -5.55112e-17
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,1]/sonos_cell_0/a_n90_n42#" 1.21053
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,2]/sonos_cell_0/a_n90_n42#" 1.11022e-16
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,2]/sonos_cell_1/a_n90_n42#" -4.996e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_cell_vshort_0[0]/m1_0_824#" 335.105
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[1,4]/sonos_cell_0/a_n90_n42#" 0.390543
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,5]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 2.77556e-17
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_1/a_n90_n42#" 0.0839364
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_0/a_n90_n42#" -9.15934e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,2]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.131139
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" -1.05471e-15
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_0/a_n90_n42#" 5.55112e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 1.38778e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,4]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.0300678
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" -4.996e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.0839364
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_0/a_n90_n42#" 1.11022e-16
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[1,1]/sonos_cell_1/a_n90_n42#" -3.33067e-16
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_1/a_n90_n42#" 0.0300678
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,5]/sonos_cell_1/a_n90_n42#" 0.0407117
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_1/a_n90_n42#" -1.11022e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,5]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.0407117
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,1]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 1.11022e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,2]/sonos_cell_0/a_n90_n42#" 1.00998
+cap "sonos_cell_vshort_1[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[2,2]/sonos_cell_1/a_n90_n42#" 0.131139
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_cell_vshort_1[0]/w_0_798#" 272.773
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_0/a_n90_n42#" 4.44089e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 2.77556e-17
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,1]/sonos_cell_0/a_n90_n42#" -3.33067e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.0839364
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.0839364
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,1]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" -5.55112e-17
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[1,2]/sonos_cell_1/a_n90_n42#" 1.00998
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.0300678
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.191381
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,1]/sonos_cell_1/a_n90_n42#" 1.21053
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_1/a_n90_n42#" 1.31496
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,1]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_1[0]/w_0_798#" 0.167928
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_0/a_n90_n42#" 2.22045e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,6]/sonos_cell_1/a_n90_n42#" 2.77556e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,4]/sonos_cell_1/a_n90_n42#" 2.77556e-16
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[1,2]/sonos_cell_1/a_n90_n42#" 6.93889e-17
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_0/a_n90_n42#" 0.33681
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,2]/sonos_cell_1/a_n90_n42#" 0.0063536
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_1/a_n90_n42#" 4.44089e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,5]/sonos_cell_1/a_n90_n42#" 1.11022e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,6]/sonos_cell_0/a_n90_n42#" 1.28427
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_0/a_n90_n42#" 0.718258
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[1,4]/sonos_cell_1/a_n90_n42#" -5.27356e-16
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,6]/sonos_cell_0/a_n90_n42#" 1.11022e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" -8.60423e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_0/a_n90_n42#" 1.11022e-16
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,5]/sonos_cell_0/a_n90_n42#" -6.38378e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,5]/sonos_cell_0/a_n90_n42#" 1.11022e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 3.05311e-16
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_1/a_n90_n42#" -1.38778e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.33681
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,5]/sonos_cell_1/a_n90_n42#" -5.55112e-17
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,6]/sonos_cell_1/a_n90_n42#" -5.55112e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" -8.04912e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[1,5]/sonos_cell_0/a_n90_n42#" 1.04267
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,1]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 1.38778e-17
+cap "sonos_cell_vshort_1[0]/dw_0_798#" "sonos_cell_vshort_1[0]/w_0_798#" -5880
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,6]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 1.28427
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,1]/sonos_cell_1/a_n90_n42#" 2.77556e-17
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[1,2]/sonos_cell_0/a_n90_n42#" 0.0063536
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_0/a_n90_n42#" -1.38778e-17
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_1/a_n90_n42#" 2.77556e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_1/a_n90_n42#" 0.33681
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[1,6]/sonos_cell_1/a_n90_n42#" 1.28427
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 5.55112e-17
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_cell_vshort_1[0]/w_0_798#" 364.933
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 1.11022e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,6]/sonos_cell_1/a_n90_n42#" 1.28427
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_1/a_n90_n42#" 0.718258
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 1.66533e-16
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,2]/sonos_cell_1/a_n90_n42#" -5.55112e-17
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_0/a_n90_n42#" 1.73472e-18
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[1,5]/sonos_cell_1/a_n90_n42#" 1.04267
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,6]/sonos_cell_0/a_n90_n42#" -7.77156e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" -4.44089e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_1/a_n90_n42#" 2.60209e-18
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,2]/sonos_cell_0/a_n90_n42#" 0.0063536
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_1/a_n90_n42#" -8.67362e-19
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_1/a_n90_n42#" -5.55112e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,5]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 1.11022e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_1/a_n90_n42#" 1.42389
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" -8.32667e-17
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[1,5]/sonos_cell_0/a_n90_n42#" -1.94289e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[1,2]/sonos_cell_1/a_n90_n42#" 0.0063536
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_1/a_n90_n42#" 1.42389
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,6]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 1.11022e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,2]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 1.11022e-16
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_1/a_n90_n42#" 2.22045e-16
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_1/a_n90_n42#" -5.55112e-17
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[1,6]/sonos_cell_1/a_n90_n42#" -6.10623e-16
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[1,1]/sonos_cell_0/a_n90_n42#" 8.32667e-17
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_cell_vshort_1[0]/w_0_798#" 167.334
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,6]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" -6.93889e-16
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_1/a_n90_n42#" -7.21645e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[1,4]/sonos_cell_1/a_n90_n42#" 0.718258
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_0/a_n90_n42#" 1.42389
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,6]/sonos_cell_0/a_n90_n42#" 2.22045e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,5]/sonos_cell_0/a_n90_n42#" 1.04267
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.718258
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_cell_vshort_0[0]/m1_0_824#" 422.666
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" -1.38778e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,5]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 8.32667e-17
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_0/a_n90_n42#" 2.60209e-18
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,5]/sonos_cell_1/a_n90_n42#" 1.04267
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_0/a_n90_n42#" 1.42389
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,2]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 6.93889e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" -4.44089e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.33681
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_1/a_n90_n42#" 0.0172277
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_0/a_n90_n42#" 0.1873
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,6]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_1[0]/w_n224_0#" 0.160585
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[1,6]/sonos_cell_0/a_n90_n42#" 0.160585
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_1/a_n90_n42#" 0.1873
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,5]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_1[0]/w_n224_0#" 0.121117
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[2,6]/sonos_cell_1/a_n90_n42#" 0.160585
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[1,5]/sonos_cell_1/a_n90_n42#" 0.121117
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_1[0]/w_n224_0#" 0.1873
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,5]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_1[0]/w_n224_0#" 0.121117
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_0/a_n90_n42#" 0.0172277
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[1,5]/sonos_cell_0/a_n90_n42#" 0.121117
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[1,4]/sonos_cell_0/a_n90_n42#" 0.0720316
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_1[0]/w_n224_0#" 0.1873
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_cell_hshort_1[3]/a_n88_116#" 59.9086
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_cell_hshort_1[0]/dw_n224_0#" -411.6
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[1,4]/sonos_cell_1/a_n90_n42#" 0.0720316
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[2,6]/sonos_cell_0/a_n90_n42#" 0.160585
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_1/a_n90_n42#" 0.0172277
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_1/a_n90_n244#" 9.6259
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_0/a_n90_n42#" 0.0720316
+cap "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_0/a_n90_n42#" 0.0172277
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_1[0]/w_n224_0#" 0.0720316
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,2]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" -1.11022e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" -1.11022e-16
+cap "sonos_cell_vshort_0[0]/dw_0_798#" "sonos_cell_vshort_0[0]/w_0_798#" -3637.64
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.390543
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,2]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 0.203161
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,2]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.216169
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 1.23779
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.346868
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 1.05622
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" -5.55112e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.304062
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,1]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 0.203161
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,1]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 1.21053
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,1]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.216169
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.116054
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 0.200904
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,5]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 2.77556e-17
+cap "sonos_cell_vshort_0[0]/w_0_798#" "sonos_cell_vshort_0[0]/m1_0_824#" 245.154
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 0.0300678
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 2.77556e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,2]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 1.38778e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,2]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 1.17755
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 1.31496
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,6]/sonos_cell_1/a_n90_n42#" -2.77556e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,2]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.644397
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 1.31496
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.303261
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 0.93917
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,5]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.0407117
+cap "sonos_cell_vshort_0[0]/w_0_798#" "sonos_cell_hshort_0[3]/a_n88_116#" 319.326
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_cell_hshort_0[3]/a_n88_116#" 201.424
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.390543
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,2]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 5.55112e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,2]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 0.995983
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,1]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 1.03277
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,2]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 1.00998
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,2]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.564873
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,1]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.564873
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 1.38778e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 1.11872
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,5]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 5.55112e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.345954
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,1]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 1.38778e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,1]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 0.524952
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 0.203161
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.729215
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 3.46945e-18
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,1]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.392265
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.11636
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 0.519119
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.210594
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,2]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 0.524952
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 0.524952
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,2]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.392265
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.21115
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 0.0300678
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 1.11022e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 2.77556e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,2]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 1.00998
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,1]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 1.21053
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,1]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 2.77556e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.729215
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,5]/sonos_cell_0/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" 0.0407117
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,1]/sonos_cell_1/a_n90_n42#" "sonos_cell_hshort_0[3]/a_n88_116#" -1.11022e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[1,3]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 1.38778e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,1]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.644397
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,1]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 1.21434
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_1/a_n90_n42#" 0.00726417
+cap "sonos_cell_vshort_0[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_1/a_n90_n42#" 0.524952
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" -1.38778e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,6]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.392265
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_1/a_n90_n42#" -1.11022e-16
+cap "sonos_cell_vshort_0[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[3,6]/sonos_cell_0/a_n90_n42#" 0.864843
+cap "sonos_cell_vshort_0[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_1/a_n90_n42#" 0.524952
+cap "sonos_cell_vshort_0[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_1/a_n90_n42#" 0.0116268
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,6]/sonos_cell_0/a_n90_n42#" 1.28427
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_1/a_n90_n42#" 0.33681
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,1]/sonos_cell_0/a_n90_n42#" 1.11022e-16
+cap "sonos_cell_vshort_0[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_1/a_n90_n42#" 1.04641
+cap "sonos_cell_vshort_0[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_0/a_n90_n42#" 0.00960937
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_0/a_n90_n42#" 0.33681
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_1/a_n90_n42#" 0.718258
+cap "sonos_cell_vshort_0[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_0/a_n90_n42#" 0.864843
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_0/a_n90_n42#" 1.42389
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_1/a_n90_n42#" 1.73472e-18
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,6]/sonos_cell_1/a_n90_n42#" 0.644397
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[1,5]/sonos_cell_1/a_n90_n42#" 1.38778e-17
+cap "sonos_cell_vshort_0[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_1/a_n90_n42#" 0.0058328
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,6]/sonos_cell_1/a_n90_n42#" -1.11022e-16
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,6]/sonos_cell_0/a_n90_n42#" 0.216169
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,6]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 0.524952
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[1,5]/sonos_cell_1/a_n90_n42#" 5.55112e-17
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[1,6]/sonos_cell_1/a_n90_n42#" 1.38778e-17
+cap "sonos_cell_vshort_0[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[3,6]/sonos_cell_1/a_n90_n42#" 1.04641
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,6]/sonos_cell_1/a_n90_n42#" 1.28427
+cap "sonos_cell_vshort_0[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[2,6]/sonos_cell_0/a_n90_n42#" 0.203161
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" -1.38778e-17
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_0/a_n90_n42#" 0.216169
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,5]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.216169
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[1,6]/sonos_cell_1/a_n90_n42#" 5.55112e-17
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[1,4]/sonos_cell_1/a_n90_n42#" 1.38778e-17
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,5]/sonos_cell_0/a_n90_n42#" 0.564873
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,5]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 0.203161
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,5]/sonos_cell_1/a_n90_n42#" 0.392265
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,5]/sonos_cell_1/a_n90_n42#" 0.644397
+cap "sonos_cell_vshort_0[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_0/a_n90_n42#" 0.203161
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_1/a_n90_n42#" 1.62357
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.216169
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.564873
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[1,4]/sonos_cell_1/a_n90_n42#" 5.55112e-17
+cap "sonos_cell_vshort_0[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[3,5]/sonos_cell_0/a_n90_n42#" 0.864843
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,5]/sonos_cell_0/a_n90_n42#" 1.04267
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,2]/sonos_cell_1/a_n90_n42#" 1.94289e-16
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_1/a_n90_n42#" 2.77556e-17
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,5]/sonos_cell_1/a_n90_n42#" -1.11022e-16
+cap "sonos_cell_vshort_0[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[2,5]/sonos_cell_1/a_n90_n42#" 0.524952
+cap "sonos_cell_vshort_0[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[3,5]/sonos_cell_1/a_n90_n42#" 1.04641
+cap "sonos_cell_vshort_0[0]/w_0_798#" "sonos_cell_vshort_0[0]/m1_0_824#" 270.34
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,5]/sonos_cell_1/a_n90_n42#" 1.04267
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_cell_vshort_0[0]/m1_0_824#" 254.339
+cap "sonos_cell_vshort_0[0]/w_0_798#" "sonos_cell_vshort_0[0]/dw_0_798#" -3783.3
+cap "sonos_cell_vshort_0[0]/w_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_1/a_n90_n42#" 1.04641
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 0.203161
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_1/a_n90_n42#" 1.42389
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,2]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 3.46945e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 0.864843
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_0/a_n90_n42#" 0.718258
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,1]/sonos_cell_1/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 1.38778e-17
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.00400313
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,2]/sonos_cell_1/a_n90_n42#" 0.0063536
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_1/a_n90_n42#" 0.392265
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_cell_vshort_0[0]/w_0_798#" 382.333
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,6]/sonos_cell_0/a_n90_n42#" 0.564873
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[2,4]/sonos_cell_1/a_n90_n42#" 0.392265
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[3,2]/sonos_cell_0/a_n90_n42#" 0.0063536
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_0/a_n90_n42#" 0.0104606
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_1/a_n90_n42#" 0.0119333
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_0/a_n90_n42#" 8.67362e-19
+cap "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_1/a_n90_n42#" 0.644397
+cap "sonos_8x8_0/sonos_cell_mirrored_0[2,3]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/w_0_798#" 0.00225735
+cap "sonos_cell_hshort_0[3]/a_n88_116#" "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_1/a_n90_n42#" -1.11022e-16
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_0/a_n90_n42#" "sonos_cell_vshort_0[0]/m1_0_824#" 0.564873
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_1/a_n90_n244#" "w_n224_n244#" 19.028
+cap "w_n224_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_1/a_n90_n42#" 0.1873
+cap "w_n224_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[3,6]/sonos_cell_1/a_n90_n42#" 0.160585
+cap "w_n224_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_1/a_n90_n42#" 0.0720316
+cap "w_n224_n244#" "sonos_cell_hshort_1[3]/a_n88_116#" 29.7301
+cap "w_n224_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_1/a_n90_n42#" 0.0172277
+cap "w_n224_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[3,6]/sonos_cell_0/a_n90_n42#" 0.160585
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_0/a_n90_n42#" "w_n224_n244#" 0.0172277
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,5]/sonos_cell_1/a_n90_n42#" "w_n224_n244#" 0.121117
+cap "w_n224_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_0/a_n90_n42#" 0.0720316
+cap "w_n224_n244#" "dw_n224_n244#" -198.156
+cap "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_0/a_n90_n42#" "w_n224_n244#" 0.1873
+cap "w_n224_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[3,5]/sonos_cell_0/a_n90_n42#" 0.121117
+merge "sonos_cell_vshort_0[2]/w_0_798#" "sonos_cell_vshort_0[0]/w_0_798#" -2500.76 -9599188 -34488 0 0 0 0 0 0 0 0 -89964 -3404 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -463500 -20940 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sonos_cell_vshort_0[0]/w_0_798#" "sonos_cell_vshort_1[2]/w_0_798#"
+merge "sonos_cell_vshort_1[2]/w_0_798#" "sonos_8x8_0/w_0_0#"
+merge "sonos_8x8_0/w_0_0#" "sonos_cell_hshort_0[0]/w_n224_0#"
+merge "sonos_cell_hshort_0[0]/w_n224_0#" "sonos_cell_hshort_1[0]/w_n224_0#"
+merge "sonos_cell_hshort_1[0]/w_n224_0#" "sonos_cell_vshort_1[0]/w_0_798#"
+merge "sonos_cell_vshort_1[0]/w_0_798#" "li_n200_n220#"
+merge "li_n200_n220#" "w_n224_n244#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_1/a_n144_42#" "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_1/a_n144_n130#" -4274.59 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -77616 -6832 0 0 0 -1088 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_1/a_n144_n130#" "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_1/li_n144_n60#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_1/li_n144_n60#" "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_1/a_n144_42#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_1/a_n144_42#" "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_1/a_n144_n130#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_1/a_n144_n130#" "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_0/a_n144_n130#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_0/a_n144_n130#" "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_0/a_n144_42#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_0/a_n144_42#" "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_1/a_n144_42#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_1/a_n144_42#" "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_1/a_n144_n130#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_1/a_n144_n130#" "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_0/a_n144_n130#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_0/a_n144_n130#" "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_0/a_n144_42#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_0/a_n144_42#" "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_1/a_n144_42#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_1/a_n144_42#" "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_1/a_n144_n130#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[1,7]/sonos_cell_1/a_n144_n130#" "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_0/a_n144_n130#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_0/a_n144_n130#" "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_0/a_n144_42#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_0/a_n144_42#" "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_1/a_n144_42#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_1/a_n144_42#" "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_1/a_n144_n130#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[2,7]/sonos_cell_1/a_n144_n130#" "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_0/a_n144_n130#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_0/a_n144_n130#" "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_0/a_n144_42#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_0/a_n144_42#" "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_0/li_n144_n60#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_0/li_n144_n60#" "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_1/li_n144_n60#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_1/li_n144_n60#" "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_0/li_n144_n60#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_0/li_n144_n60#" "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_1/li_n144_n60#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_1/li_n144_n60#" "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_0/li_n144_n60#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_0/li_n144_n60#" "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_1/li_n144_n60#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_1/li_n144_n60#" "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_0/li_n144_n60#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_0/li_n144_n60#" "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_0/a_n144_n130#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_0/a_n144_n130#" "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_0/a_n144_42#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_0/a_n144_42#" "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_1/a_n144_42#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_1/a_n144_42#" "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_1/a_n144_n130#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_1/a_n144_n130#" "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_0/a_n144_n130#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_0/a_n144_n130#" "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_0/a_n144_42#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_0/a_n144_42#" "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_1/a_n144_42#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_1/a_n144_42#" "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_1/a_n144_n130#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[1,0]/sonos_cell_1/a_n144_n130#" "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_0/a_n144_n130#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_0/a_n144_n130#" "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_0/a_n144_42#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_0/a_n144_42#" "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_1/a_n144_42#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_1/a_n144_42#" "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_1/a_n144_n130#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[2,0]/sonos_cell_1/a_n144_n130#" "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_0/a_n144_n130#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_0/a_n144_n130#" "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_0/a_n144_42#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_0/a_n144_42#" "sonos_cell_hshort_1[3]/a_n88_116#"
+merge "sonos_cell_hshort_1[3]/a_n88_116#" "sonos_cell_hshort_0[3]/a_n88_116#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_1/a_n90_102#" "sonos_cell_vshort_0[2]/m1_0_824#" -3155.08 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4608 0 0 0 0 0 0 0 0 0 0
+merge "sonos_cell_vshort_0[2]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_1/a_n90_n244#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,7]/sonos_cell_1/a_n90_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[3,6]/sonos_cell_1/a_n90_102#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,6]/sonos_cell_1/a_n90_102#" "sonos_8x8_0/sonos_cell_mirrored_0[3,6]/sonos_cell_1/a_n90_n244#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,6]/sonos_cell_1/a_n90_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[3,5]/sonos_cell_1/a_n90_102#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,5]/sonos_cell_1/a_n90_102#" "sonos_8x8_0/sonos_cell_mirrored_0[3,5]/sonos_cell_1/a_n90_n244#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,5]/sonos_cell_1/a_n90_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_1/a_n90_102#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_1/a_n90_102#" "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_1/a_n90_n244#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,4]/sonos_cell_1/a_n90_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_1/a_n90_102#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_1/a_n90_102#" "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_1/a_n90_n244#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,3]/sonos_cell_1/a_n90_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[3,2]/sonos_cell_1/a_n90_102#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,2]/sonos_cell_1/a_n90_102#" "sonos_8x8_0/sonos_cell_mirrored_0[3,2]/sonos_cell_1/a_n90_n244#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,2]/sonos_cell_1/a_n90_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[3,1]/sonos_cell_1/a_n90_102#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,1]/sonos_cell_1/a_n90_102#" "sonos_8x8_0/sonos_cell_mirrored_0[3,1]/sonos_cell_1/a_n90_n244#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,1]/sonos_cell_1/a_n90_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_1/a_n90_102#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_1/a_n90_102#" "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_1/a_n90_n244#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[3,0]/sonos_cell_1/a_n90_n244#" "sonos_cell_vshort_0[0]/m1_0_824#"
+merge "sonos_cell_vshort_0[0]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_1/a_n90_102#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_1/a_n90_102#" "sonos_cell_vshort_1[2]/m1_0_824#"
+merge "sonos_cell_vshort_1[2]/m1_0_824#" "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_0/a_n90_n244#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,7]/sonos_cell_0/a_n90_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[0,6]/sonos_cell_1/a_n90_102#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,6]/sonos_cell_1/a_n90_102#" "sonos_8x8_0/sonos_cell_mirrored_0[0,6]/sonos_cell_0/a_n90_n244#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,6]/sonos_cell_0/a_n90_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[0,5]/sonos_cell_1/a_n90_102#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,5]/sonos_cell_1/a_n90_102#" "sonos_8x8_0/sonos_cell_mirrored_0[0,5]/sonos_cell_0/a_n90_n244#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,5]/sonos_cell_0/a_n90_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[0,4]/sonos_cell_1/a_n90_102#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,4]/sonos_cell_1/a_n90_102#" "sonos_8x8_0/sonos_cell_mirrored_0[0,4]/sonos_cell_0/a_n90_n244#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,4]/sonos_cell_0/a_n90_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_1/a_n90_102#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_1/a_n90_102#" "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_0/a_n90_n244#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_0/a_n90_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[0,2]/sonos_cell_1/a_n90_102#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,2]/sonos_cell_1/a_n90_102#" "sonos_8x8_0/sonos_cell_mirrored_0[0,2]/sonos_cell_0/a_n90_n244#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,2]/sonos_cell_0/a_n90_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[0,1]/sonos_cell_1/a_n90_102#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,1]/sonos_cell_1/a_n90_102#" "sonos_8x8_0/sonos_cell_mirrored_0[0,1]/sonos_cell_0/a_n90_n244#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,1]/sonos_cell_0/a_n90_n244#" "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_1/a_n90_102#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_1/a_n90_102#" "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_0/a_n90_n244#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_0/a_n90_n244#" "sonos_cell_vshort_1[0]/m1_0_824#"
+merge "sonos_cell_vshort_0[2]/dw_0_798#" "sonos_cell_vshort_0[0]/dw_0_798#" -28797.6 0 0 -9599188 -34488 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sonos_cell_vshort_0[0]/dw_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_1/dw_n144_n252#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,3]/sonos_cell_1/dw_n144_n252#" "sonos_cell_vshort_1[2]/dw_0_798#"
+merge "sonos_cell_vshort_1[2]/dw_0_798#" "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_1/dw_n144_n252#"
+merge "sonos_8x8_0/sonos_cell_mirrored_0[0,0]/sonos_cell_1/dw_n144_n252#" "sonos_cell_hshort_0[0]/dw_n224_0#"
+merge "sonos_cell_hshort_0[0]/dw_n224_0#" "sonos_cell_hshort_1[0]/dw_n224_0#"
+merge "sonos_cell_hshort_1[0]/dw_n224_0#" "sonos_cell_vshort_1[0]/dw_0_798#"
+merge "sonos_cell_vshort_1[0]/dw_0_798#" "dw_n224_n244#"
+cap "sonos_cell_vshort_1[0:6]/dw_0_798#" "sonos_cell_vshort_1[0:6]/w_0_798#" -32.004
+cap "sonos_cell_vshort_1[0:6]/m1_0_824#" "sonos_cell_vshort_1[0:6]/w_0_798#" -4.87563
+cap "sonos_cell_vshort_1[2:7]/w_0_798#" "sonos_cell_vshort_1[2:7]/m1_0_824#" -0.428742
+cap "sonos_cell_vshort_1[2:7]/w_0_798#" "sonos_cell_vshort_1[0:5]/m1_0_824#" 1.94687
+cap "sonos_cell_vshort_1[2:7]/w_0_798#" "sonos_cell_vshort_1[0:5]/w_0_798#" 7.75702
+cap "sonos_cell_vshort_1[0:5]/m1_0_824#" "sonos_cell_vshort_1[2:7]/m1_0_824#" 16.0077
+cap "sonos_cell_vshort_1[2:7]/m1_0_824#" "sonos_cell_vshort_1[0:5]/w_0_798#" 1.8981
+cap "sonos_cell_vshort_1[0:5]/m1_0_824#" "sonos_cell_vshort_1[0:5]/w_0_798#" -0.0290816
+cap "sonos_cell_vshort_1[3:7]/m1_0_824#" "sonos_cell_vshort_1[0:4]/m1_0_824#" 7.63555
+cap "sonos_cell_vshort_1[3:7]/w_0_798#" "sonos_cell_vshort_1[0:4]/w_0_798#" 7.54278
+cap "sonos_cell_vshort_1[0:4]/m1_0_824#" "sonos_cell_vshort_1[0:4]/w_0_798#" -0.0175839
+cap "sonos_cell_vshort_1[3:7]/m1_0_824#" "sonos_cell_vshort_1[0:4]/w_0_798#" 3.032
+cap "sonos_cell_vshort_1[0:4]/m1_0_824#" "sonos_cell_vshort_1[3:7]/w_0_798#" 3.14011
+cap "sonos_cell_vshort_1[3:7]/m1_0_824#" "sonos_cell_vshort_1[3:7]/w_0_798#" -0.255044
+cap "sonos_cell_vshort_1[4:7]/m1_0_824#" "sonos_cell_vshort_1[4:7]/w_0_798#" -0.119448
+cap "sonos_cell_vshort_1[0:3]/w_0_798#" "sonos_cell_vshort_1[4:7]/w_0_798#" 6.62575
+cap "sonos_cell_vshort_1[0:3]/w_0_798#" "sonos_cell_vshort_1[4:7]/m1_0_824#" 3.04334
+cap "sonos_cell_vshort_1[0:3]/m1_0_824#" "sonos_cell_vshort_1[4:7]/w_0_798#" 3.2129
+cap "sonos_cell_vshort_1[0:3]/m1_0_824#" "sonos_cell_vshort_1[4:7]/m1_0_824#" 5.03135
+cap "sonos_cell_vshort_1[0:3]/m1_0_824#" "sonos_cell_vshort_1[0:3]/w_0_798#" -0.00848597
+cap "sonos_cell_vshort_1[0:2]/w_0_798#" "sonos_cell_vshort_1[5:7]/w_0_798#" 4.23325
+cap "sonos_cell_vshort_1[5:7]/m1_0_824#" "sonos_cell_vshort_1[5:7]/w_0_798#" -0.0327224
+cap "sonos_cell_vshort_1[0:2]/w_0_798#" "sonos_cell_vshort_1[5:7]/m1_0_824#" 1.93133
+cap "sonos_cell_vshort_1[0:2]/m1_0_824#" "sonos_cell_vshort_1[5:7]/w_0_798#" 2.13884
+cap "sonos_cell_vshort_1[0:2]/m1_0_824#" "sonos_cell_vshort_1[0:2]/w_0_798#" -0.00251047
+cap "sonos_cell_vshort_1[0:2]/m1_0_824#" "sonos_cell_vshort_1[5:7]/m1_0_824#" 3.75495
+cap "sonos_cell_vshort_1[0:1]/w_0_798#" "sonos_cell_vshort_1[0:1]/m1_0_824#" -0.00010778
+cap "sonos_cell_vshort_1[0:1]/w_0_798#" "sonos_cell_vshort_1[6:7]/w_0_798#" 1.39687
+cap "sonos_cell_vshort_1[6:7]/m1_0_824#" "sonos_cell_vshort_1[0:1]/m1_0_824#" 2.81777
+cap "sonos_cell_vshort_1[6:7]/m1_0_824#" "sonos_cell_vshort_1[6:7]/w_0_798#" -0.00116186
+cap "sonos_cell_vshort_1[0:1]/m1_0_824#" "sonos_cell_vshort_1[6:7]/w_0_798#" 0.444923
+cap "sonos_cell_vshort_1[6:7]/m1_0_824#" "sonos_cell_vshort_1[0:1]/w_0_798#" 0.372368
+cap "sonos_cell_vshort_0[0:6]/w_0_798#" "sonos_cell_vshort_0[0:6]/m1_0_824#" -4.87563
+cap "sonos_cell_vshort_0[0:6]/w_0_798#" "sonos_cell_vshort_0[0:6]/dw_0_798#" -32.004
+cap "sonos_cell_vshort_0[0:5]/w_0_798#" "sonos_cell_vshort_0[2:7]/m1_0_824#" 1.8981
+cap "sonos_cell_vshort_0[0:5]/m1_0_824#" "sonos_cell_vshort_0[2:7]/m1_0_824#" 16.0077
+cap "sonos_cell_vshort_0[0:5]/w_0_798#" "sonos_cell_vshort_0[2:7]/w_0_798#" 7.75702
+cap "sonos_cell_vshort_0[0:5]/m1_0_824#" "sonos_cell_vshort_0[2:7]/w_0_798#" 1.94687
+cap "sonos_cell_vshort_0[0:5]/m1_0_824#" "sonos_cell_vshort_0[0:5]/w_0_798#" -0.0290816
+cap "sonos_cell_vshort_0[2:7]/w_0_798#" "sonos_cell_vshort_0[2:7]/m1_0_824#" -0.428742
+cap "sonos_cell_vshort_0[3:7]/w_0_798#" "sonos_cell_vshort_0[0:4]/m1_0_824#" 3.14011
+cap "sonos_cell_vshort_0[0:4]/w_0_798#" "sonos_cell_vshort_0[0:4]/m1_0_824#" -0.0175839
+cap "sonos_cell_vshort_0[3:7]/m1_0_824#" "sonos_cell_vshort_0[0:4]/m1_0_824#" 7.63555
+cap "sonos_cell_vshort_0[0:4]/w_0_798#" "sonos_cell_vshort_0[3:7]/w_0_798#" 7.54278
+cap "sonos_cell_vshort_0[3:7]/m1_0_824#" "sonos_cell_vshort_0[3:7]/w_0_798#" -0.255044
+cap "sonos_cell_vshort_0[3:7]/m1_0_824#" "sonos_cell_vshort_0[0:4]/w_0_798#" 3.032
+cap "sonos_cell_vshort_0[4:7]/m1_0_824#" "sonos_cell_vshort_0[0:3]/w_0_798#" 3.04334
+cap "sonos_cell_vshort_0[4:7]/w_0_798#" "sonos_cell_vshort_0[0:3]/m1_0_824#" 3.2129
+cap "sonos_cell_vshort_0[4:7]/m1_0_824#" "sonos_cell_vshort_0[0:3]/m1_0_824#" 5.03135
+cap "sonos_cell_vshort_0[0:3]/m1_0_824#" "sonos_cell_vshort_0[0:3]/w_0_798#" -0.00848597
+cap "sonos_cell_vshort_0[4:7]/w_0_798#" "sonos_cell_vshort_0[4:7]/m1_0_824#" -0.119448
+cap "sonos_cell_vshort_0[4:7]/w_0_798#" "sonos_cell_vshort_0[0:3]/w_0_798#" 6.62575
+cap "sonos_cell_vshort_0[0:2]/w_0_798#" "sonos_cell_vshort_0[0:2]/m1_0_824#" -0.00251047
+cap "sonos_cell_vshort_0[5:7]/w_0_798#" "sonos_cell_vshort_0[0:2]/m1_0_824#" 2.13884
+cap "sonos_cell_vshort_0[0:2]/w_0_798#" "sonos_cell_vshort_0[5:7]/w_0_798#" 4.23325
+cap "sonos_cell_vshort_0[5:7]/m1_0_824#" "sonos_cell_vshort_0[0:2]/m1_0_824#" 3.75495
+cap "sonos_cell_vshort_0[0:2]/w_0_798#" "sonos_cell_vshort_0[5:7]/m1_0_824#" 1.93133
+cap "sonos_cell_vshort_0[5:7]/w_0_798#" "sonos_cell_vshort_0[5:7]/m1_0_824#" -0.0327224
+cap "sonos_cell_vshort_0[6:7]/w_0_798#" "sonos_cell_vshort_0[6:7]/m1_0_824#" -0.00116186
+cap "sonos_cell_vshort_0[6:7]/w_0_798#" "sonos_cell_vshort_0[0:1]/m1_0_824#" 0.444923
+cap "sonos_cell_vshort_0[0:1]/m1_0_824#" "sonos_cell_vshort_0[6:7]/m1_0_824#" 2.81777
+cap "sonos_cell_vshort_0[0:1]/w_0_798#" "sonos_cell_vshort_0[6:7]/w_0_798#" 1.39687
+cap "sonos_cell_vshort_0[0:1]/w_0_798#" "sonos_cell_vshort_0[6:7]/m1_0_824#" 0.372368
+cap "sonos_cell_vshort_0[0:1]/w_0_798#" "sonos_cell_vshort_0[0:1]/m1_0_824#" -0.00010778
+cap "sonos_cell_hshort_1[0:2]/w_n224_0#" "sonos_cell_hshort_1[0:2]/dw_n224_0#" -100.92
+cap "sonos_cell_hshort_1[0:2]/w_n224_0#" "sonos_cell_hshort_1[0:2]/a_n88_116#" -14.5083
+cap "sonos_cell_hshort_1[0:1]/a_n88_116#" "sonos_cell_hshort_1[0:1]/w_n224_0#" -1.40213
+cap "sonos_cell_hshort_1[2:3]/a_n88_116#" "sonos_cell_hshort_1[2:3]/w_n224_0#" -1.40213
+cap "sonos_cell_hshort_1[0:1]/a_n88_116#" "sonos_cell_hshort_1[2:3]/w_n224_0#" 14.6173
+cap "sonos_cell_hshort_1[0:1]/a_n88_116#" "sonos_cell_hshort_1[2:3]/a_n88_116#" 21.0835
+cap "sonos_cell_hshort_1[0:1]/w_n224_0#" "sonos_cell_hshort_1[2:3]/w_n224_0#" 10.1545
+cap "sonos_cell_hshort_1[2:3]/a_n88_116#" "sonos_cell_hshort_1[0:1]/w_n224_0#" 14.6242
+cap "sonos_cell_hshort_1[0:0]/a_n88_116#" "sonos_cell_hshort_1[3:3]/a_n88_116#" 5.14407
+cap "sonos_cell_hshort_1[3:3]/a_n88_116#" "sonos_cell_hshort_1[0:0]/w_n224_0#" 1.70065
+cap "sonos_cell_hshort_1[0:0]/a_n88_116#" "sonos_cell_hshort_1[3:3]/w_n224_0#" 1.70062
+cap "sonos_cell_hshort_1[3:3]/w_n224_0#" "sonos_cell_hshort_1[0:0]/w_n224_0#" 1.81917
+cap "sonos_cell_hshort_1[3:3]/w_n224_0#" "sonos_cell_hshort_1[3:3]/a_n88_116#" -0.0213474
+cap "sonos_cell_hshort_1[0:0]/a_n88_116#" "sonos_cell_hshort_1[0:0]/w_n224_0#" -0.0213474
+cap "sonos_cell_hshort_0[0:2]/w_n224_0#" "sonos_cell_hshort_0[0:2]/a_n88_116#" -14.5083
+cap "sonos_cell_hshort_0[0:2]/dw_n224_0#" "sonos_cell_hshort_0[0:2]/w_n224_0#" -100.92
+cap "sonos_cell_hshort_0[0:1]/a_n88_116#" "sonos_cell_hshort_0[0:1]/w_n224_0#" -1.40213
+cap "sonos_cell_hshort_0[0:1]/a_n88_116#" "sonos_cell_hshort_0[2:3]/a_n88_116#" 21.0835
+cap "sonos_cell_hshort_0[2:3]/a_n88_116#" "sonos_cell_hshort_0[0:1]/w_n224_0#" 14.6242
+cap "sonos_cell_hshort_0[0:1]/a_n88_116#" "sonos_cell_hshort_0[2:3]/w_n224_0#" 14.6173
+cap "sonos_cell_hshort_0[2:3]/w_n224_0#" "sonos_cell_hshort_0[0:1]/w_n224_0#" 10.1545
+cap "sonos_cell_hshort_0[2:3]/a_n88_116#" "sonos_cell_hshort_0[2:3]/w_n224_0#" -1.40213
+cap "sonos_cell_hshort_0[3:3]/a_n88_116#" "sonos_cell_hshort_0[3:3]/w_n224_0#" -0.0213474
+cap "sonos_cell_hshort_0[0:0]/w_n224_0#" "sonos_cell_hshort_0[3:3]/w_n224_0#" 1.81917
+cap "sonos_cell_hshort_0[3:3]/a_n88_116#" "sonos_cell_hshort_0[0:0]/w_n224_0#" 1.70065
+cap "sonos_cell_hshort_0[0:0]/a_n88_116#" "sonos_cell_hshort_0[3:3]/w_n224_0#" 1.70062
+cap "sonos_cell_hshort_0[3:3]/a_n88_116#" "sonos_cell_hshort_0[0:0]/a_n88_116#" 5.14407
+cap "sonos_cell_hshort_0[0:0]/w_n224_0#" "sonos_cell_hshort_0[0:0]/a_n88_116#" -0.0213474
+merge "sonos_cell_vshort_1[1:7]/dw_0_798#" "sonos_cell_vshort_1[0:6]/dw_0_798#" -32.004 0 0 -10668 -592 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sonos_cell_vshort_0[1:7]/w_0_798#" "sonos_cell_vshort_0[0:6]/w_0_798#" -18.0084 -10668 -592 0 0 0 0 0 0 0 0 -4116 -280 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sonos_cell_hshort_1[1:3]/w_n224_0#" "sonos_cell_hshort_1[0:2]/w_n224_0#" -16.0439 -33640 -812 0 0 0 0 0 0 0 0 -11368 -428 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sonos_cell_hshort_1[1:3]/dw_n224_0#" "sonos_cell_hshort_1[0:2]/dw_n224_0#" -100.92 0 0 -33640 -812 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sonos_cell_hshort_0[1:3]/a_n88_116#" "sonos_cell_hshort_0[0:2]/a_n88_116#" -153.173 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10208 -408 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sonos_cell_vshort_0[1:7]/dw_0_798#" "sonos_cell_vshort_0[0:6]/dw_0_798#" -32.004 0 0 -10668 -592 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sonos_cell_hshort_0[1:3]/dw_n224_0#" "sonos_cell_hshort_0[0:2]/dw_n224_0#" -100.92 0 0 -33640 -812 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sonos_cell_hshort_1[1:3]/a_n88_116#" "sonos_cell_hshort_1[0:2]/a_n88_116#" -153.173 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10208 -408 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sonos_cell_hshort_0[1:3]/w_n224_0#" "sonos_cell_hshort_0[0:2]/w_n224_0#" -16.0439 -33640 -812 0 0 0 0 0 0 0 0 -11368 -428 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sonos_cell_vshort_1[1:7]/w_0_798#" "sonos_cell_vshort_1[0:6]/w_0_798#" -18.0084 -10668 -592 0 0 0 0 0 0 0 0 -4116 -280 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sonos_cell_vshort_1[1:7]/m1_0_824#" "sonos_cell_vshort_1[0:6]/m1_0_824#" -60.5991 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3864 -268 0 0 0 0 0 0 0 0 0 0
+merge "sonos_cell_vshort_0[1:7]/m1_0_824#" "sonos_cell_vshort_0[0:6]/m1_0_824#" -60.5991 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3864 -268 0 0 0 0 0 0 0 0 0 0
