@@ -1,0 +1,11 @@
+magic
+tech sky130A
+timestamp 1663275216
+<< error_p >>
+rect 144 0 1308 1442
+use sonos_cell_mirrored  sonos_cell_mirrored_0
+array 0 7 144 0 3 346
+timestamp 1663275216
+transform 1 0 -80 0 1 -80
+box 80 80 380 484
+<< end >>

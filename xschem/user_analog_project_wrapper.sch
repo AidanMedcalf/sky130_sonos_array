@@ -41,6 +41,12 @@ N 4560 -170 4610 -170 {
 lab=io_analog[9]}
 N 4650 -170 4780 -170 {
 lab=vssa1}
+N 3750 190 3770 190 {
+lab=vssa2}
+N 3860 140 3860 160 {
+lab=vssa2}
+N 3950 210 3970 210 {
+lab=vssa2}
 C {devices/iopin.sym} 3240 -470 0 0 {name=p1 lab=vdda1}
 C {devices/iopin.sym} 3240 -440 0 0 {name=p2 lab=vdda2}
 C {devices/iopin.sym} 3240 -410 0 0 {name=p3 lab=vssa1}
@@ -106,3 +112,10 @@ C {devices/lab_wire.sym} 4650 -260 0 1 {name=l1 sig_type=std_logic lab=io_analog
 C {devices/lab_wire.sym} 4560 -170 0 0 {name=l3 sig_type=std_logic lab=io_analog[9]}
 C {devices/lab_wire.sym} 4650 -90 0 1 {name=l5 sig_type=std_logic lab=io_analog[10]}
 C {devices/lab_wire.sym} 4780 -170 0 1 {name=l7 sig_type=std_logic lab=vssa1}
+C {sonos_array_tied.sym} 3860 200 0 0 {name=x1[59999:0]}
+C {devices/lab_wire.sym} 3860 140 0 1 {name=l7 sig_type=std_logic lab=vssa2
+}
+C {devices/lab_wire.sym} 3750 190 0 0 {name=l7 sig_type=std_logic lab=vssa2
+}
+C {devices/lab_wire.sym} 3970 210 0 1 {name=l7 sig_type=std_logic lab=vssa2
+}
