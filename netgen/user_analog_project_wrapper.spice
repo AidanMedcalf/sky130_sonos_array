@@ -20,27 +20,27 @@ Xsonos_cell_1 w_160_160# sonos_cell_1/a_n144_n130# sonos_cell_1/dw_n144_n252# so
 + sonos_cell_1/a_n90_102# sonos_cell_1/li_n144_n60# sonos_cell_1/a_n144_42# sonos_cell
 .ends
 
-.subckt sonos_8x8 sonos_cell_mirrored_0[3|0]/sonos_cell_1/a_n90_n244# sonos_cell_mirrored_0[0|7]/sonos_cell_0/a_n144_42#
-+ sonos_cell_mirrored_0[0|7]/sonos_cell_0/li_n144_n60# sonos_cell_mirrored_0[3|7]/sonos_cell_1/a_n144_n130#
-+ sonos_cell_mirrored_0[0|7]/sonos_cell_1/a_n144_42# sonos_cell_mirrored_0[3|7]/sonos_cell_1/a_n90_n244#
-+ sonos_cell_mirrored_0[3|6]/sonos_cell_1/a_n90_102# sonos_cell_mirrored_0[3|4]/sonos_cell_1/a_n90_n244#
-+ sonos_cell_mirrored_0[1|7]/sonos_cell_0/a_n144_42# sonos_cell_mirrored_0[3|7]/sonos_cell_1/li_n144_n60#
-+ sonos_cell_mirrored_0[3|3]/sonos_cell_1/a_n90_102# sonos_cell_mirrored_0[3|7]/sonos_cell_0/a_n144_n130#
-+ sonos_cell_mirrored_0[1|7]/sonos_cell_1/a_n144_42# sonos_cell_mirrored_0[2|7]/sonos_cell_1/a_n144_n130#
-+ sonos_cell_mirrored_0[3|1]/sonos_cell_1/a_n90_n244# sonos_cell_mirrored_0[3|0]/sonos_cell_1/a_n90_102#
-+ sonos_cell_mirrored_0[2|7]/sonos_cell_0/a_n144_42# sonos_cell_mirrored_0[3|7]/sonos_cell_0/li_n144_n60#
-+ sonos_cell_mirrored_0[2|7]/sonos_cell_1/li_n144_n60# sonos_cell_mirrored_0[3|7]/sonos_cell_1/a_n90_102#
-+ sonos_cell_mirrored_0[2|7]/sonos_cell_1/a_n144_42# sonos_cell_mirrored_0[2|7]/sonos_cell_0/a_n144_n130#
-+ sonos_cell_mirrored_0[1|7]/sonos_cell_1/a_n144_n130# sonos_cell_mirrored_0[3|5]/sonos_cell_1/a_n90_n244#
-+ sonos_cell_mirrored_0[3|4]/sonos_cell_1/a_n90_102# sonos_cell_mirrored_0[3|7]/sonos_cell_0/a_n144_42#
-+ sonos_cell_mirrored_0[3|2]/sonos_cell_1/a_n90_n244# w_0_0# sonos_cell_mirrored_0[2|7]/sonos_cell_0/li_n144_n60#
-+ sonos_cell_mirrored_0[1|7]/sonos_cell_1/li_n144_n60# sonos_cell_mirrored_0[3|1]/sonos_cell_1/a_n90_102#
-+ sonos_cell_mirrored_0[3|7]/sonos_cell_1/a_n144_42# sonos_cell_mirrored_0[1|7]/sonos_cell_0/a_n144_n130#
-+ sonos_cell_mirrored_0[0|7]/sonos_cell_1/a_n144_n130# sonos_cell_mirrored_0[3|6]/sonos_cell_1/a_n90_n244#
+.subckt sonos_8x8 sonos_cell_mirrored_0[3|0]/sonos_cell_1/a_n90_n244# sonos_cell_mirrored_0[0|7]/sonos_cell_0/li_n144_n60#
++ sonos_cell_mirrored_0[3|7]/sonos_cell_1/a_n90_n244# sonos_cell_mirrored_0[0|7]/sonos_cell_0/a_n144_42#
++ sonos_cell_mirrored_0[3|4]/sonos_cell_1/a_n90_n244# sonos_cell_mirrored_0[0|7]/sonos_cell_1/a_n144_42#
++ sonos_cell_mirrored_0[3|7]/sonos_cell_1/li_n144_n60# sonos_cell_mirrored_0[1|7]/sonos_cell_0/a_n144_42#
++ sonos_cell_mirrored_0[3|1]/sonos_cell_1/a_n90_n244# sonos_cell_mirrored_0[1|7]/sonos_cell_1/a_n144_42#
++ sonos_cell_mirrored_0[3|7]/sonos_cell_1/a_n144_n130# sonos_cell_mirrored_0[3|7]/sonos_cell_0/li_n144_n60#
++ sonos_cell_mirrored_0[2|7]/sonos_cell_1/li_n144_n60# sonos_cell_mirrored_0[2|7]/sonos_cell_0/a_n144_42#
++ sonos_cell_mirrored_0[3|5]/sonos_cell_1/a_n90_n244# sonos_cell_mirrored_0[3|6]/sonos_cell_1/a_n90_102#
++ sonos_cell_mirrored_0[2|7]/sonos_cell_1/a_n144_42# sonos_cell_mirrored_0[3|2]/sonos_cell_1/a_n90_n244#
++ sonos_cell_mirrored_0[3|7]/sonos_cell_0/a_n144_n130# w_0_0# sonos_cell_mirrored_0[2|7]/sonos_cell_0/li_n144_n60#
++ sonos_cell_mirrored_0[2|7]/sonos_cell_1/a_n144_n130# sonos_cell_mirrored_0[3|1]/sonos_cell_1/a_n90_102#
++ sonos_cell_mirrored_0[1|7]/sonos_cell_1/li_n144_n60# sonos_cell_mirrored_0[3|7]/sonos_cell_0/a_n144_42#
++ sonos_cell_mirrored_0[3|3]/sonos_cell_1/a_n90_102# sonos_cell_mirrored_0[3|7]/sonos_cell_1/dw_n144_n252#
++ sonos_cell_mirrored_0[1|7]/sonos_cell_0/a_n144_n130# sonos_cell_mirrored_0[0|7]/sonos_cell_1/a_n144_n130#
++ sonos_cell_mirrored_0[3|7]/sonos_cell_1/a_n144_42# sonos_cell_mirrored_0[3|0]/sonos_cell_1/a_n90_102#
++ sonos_cell_mirrored_0[3|6]/sonos_cell_1/a_n90_n244# sonos_cell_mirrored_0[2|7]/sonos_cell_0/a_n144_n130#
++ sonos_cell_mirrored_0[1|7]/sonos_cell_1/a_n144_n130# sonos_cell_mirrored_0[3|5]/sonos_cell_1/a_n90_102#
 + sonos_cell_mirrored_0[1|7]/sonos_cell_0/li_n144_n60# sonos_cell_mirrored_0[0|7]/sonos_cell_1/li_n144_n60#
-+ sonos_cell_mirrored_0[3|5]/sonos_cell_1/a_n90_102# sonos_cell_mirrored_0[3|7]/sonos_cell_1/dw_n144_n252#
-+ sonos_cell_mirrored_0[3|3]/sonos_cell_1/a_n90_n244# sonos_cell_mirrored_0[0|7]/sonos_cell_0/a_n144_n130#
-+ sonos_cell_mirrored_0[3|2]/sonos_cell_1/a_n90_102#
++ sonos_cell_mirrored_0[3|7]/sonos_cell_1/a_n90_102# sonos_cell_mirrored_0[3|3]/sonos_cell_1/a_n90_n244#
++ sonos_cell_mirrored_0[3|2]/sonos_cell_1/a_n90_102# sonos_cell_mirrored_0[0|7]/sonos_cell_0/a_n144_n130#
++ sonos_cell_mirrored_0[3|4]/sonos_cell_1/a_n90_102#
 Xsonos_cell_mirrored_0[0|0] sonos_cell_mirrored_0[0|7]/sonos_cell_0/a_n144_n130# sonos_cell_mirrored_0[0|7]/sonos_cell_0/a_n144_42#
 + sonos_cell_mirrored_0[3|7]/sonos_cell_1/dw_n144_n252# w_0_0# sonos_cell_mirrored_0[0|7]/sonos_cell_1/a_n144_42#
 + sonos_cell_mirrored_0[0|7]/sonos_cell_0/li_n144_n60# sonos_cell_mirrored_0[0|7]/sonos_cell_1/a_n144_n130#
@@ -203,22 +203,23 @@ Xsonos_cell_mirrored_0[3|7] sonos_cell_mirrored_0[3|7]/sonos_cell_0/a_n144_n130#
 + sonos_cell_mirrored_0[3|7]/sonos_cell_1/li_n144_n60# sonos_cell_mirrored
 .ends
 
-.subckt sonos_array_1x1x64 w_n88_0# sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_vshort_1[7]/m1_0_824#
-+ sonos_cell_hshort_1[3]/dw_n88_0#
-Xsonos_8x8_0 sonos_cell_vshort_1[7]/m1_0_824# sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_hshort_1[3]/a_n88_116#
-+ sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_vshort_1[7]/m1_0_824#
-+ sonos_cell_vshort_1[7]/m1_0_824# sonos_cell_vshort_1[7]/m1_0_824# sonos_cell_hshort_1[3]/a_n88_116#
+.subckt sonos_array_1x1x64 w_n224_n244# dw_n224_n244# sonos_cell_hshort_1[3]/a_n88_116#
++ sonos_cell_vshort_1[7]/m1_0_824#
+Xsonos_8x8_0 sonos_cell_vshort_1[7]/m1_0_824# sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_vshort_1[7]/m1_0_824#
 + sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_vshort_1[7]/m1_0_824# sonos_cell_hshort_1[3]/a_n88_116#
 + sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_vshort_1[7]/m1_0_824#
-+ sonos_cell_vshort_1[7]/m1_0_824# sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_hshort_1[3]/a_n88_116#
-+ sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_vshort_1[7]/m1_0_824# sonos_cell_hshort_1[3]/a_n88_116#
++ sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_hshort_1[3]/a_n88_116#
 + sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_vshort_1[7]/m1_0_824#
 + sonos_cell_vshort_1[7]/m1_0_824# sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_vshort_1[7]/m1_0_824#
-+ w_n88_0# sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_vshort_1[7]/m1_0_824#
++ sonos_cell_hshort_1[3]/a_n88_116# w_n224_n244# sonos_cell_hshort_1[3]/a_n88_116#
++ sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_vshort_1[7]/m1_0_824# sonos_cell_hshort_1[3]/a_n88_116#
++ sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_vshort_1[7]/m1_0_824# dw_n224_n244#
 + sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_hshort_1[3]/a_n88_116#
-+ sonos_cell_vshort_1[7]/m1_0_824# sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_hshort_1[3]/a_n88_116#
-+ sonos_cell_vshort_1[7]/m1_0_824# sonos_cell_hshort_1[3]/dw_n88_0# sonos_cell_vshort_1[7]/m1_0_824#
-+ sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_vshort_1[7]/m1_0_824# sonos_8x8
++ sonos_cell_vshort_1[7]/m1_0_824# sonos_cell_vshort_1[7]/m1_0_824# sonos_cell_hshort_1[3]/a_n88_116#
++ sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_vshort_1[7]/m1_0_824# sonos_cell_hshort_1[3]/a_n88_116#
++ sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_vshort_1[7]/m1_0_824# sonos_cell_vshort_1[7]/m1_0_824#
++ sonos_cell_vshort_1[7]/m1_0_824# sonos_cell_hshort_1[3]/a_n88_116# sonos_cell_vshort_1[7]/m1_0_824#
++ sonos_8x8
 .ends
 
 .subckt user_analog_project_wrapper gpio_analog[0] gpio_analog[10] gpio_analog[11]
@@ -333,6 +334,6 @@ Xsky130_fd_bs_flash__special_sonosfet_star_1 io_analog[7] io_analog[5] vdda1 io_
 + io_analog[6] sky130_fd_bs_flash__special_sonosfet_star
 Xsky130_fd_bs_flash__special_sonosfet_star_2 io_analog[3] io_analog[1] vdda1 io_analog[0]
 + io_analog[2] sky130_fd_bs_flash__special_sonosfet_star
-Xsonos_array_1x1x64_0 w_3318_1524# vssa2 vssa2 vdda2 sonos_array_1x1x64
+Xsonos_array_1x1x64_0 vssa2 vdda2 vssa2 vssa2 sonos_array_1x1x64
 .ends
 
