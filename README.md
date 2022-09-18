@@ -6,7 +6,7 @@
 
 # Sky130 SONOS array
 
-Array of SONOS for analysis and testing. Consists of ? isolated SONOS cell with W= L= connected to (analog io ??).
+Array of SONOS for analysis and testing. Consists of 3 isolated SONOS cell with W=0.45um L=0.45um connected to (analog io ??).
 
 The remaining space is a small SONOS array tiled to fill available space. All pins are grounded.
 
