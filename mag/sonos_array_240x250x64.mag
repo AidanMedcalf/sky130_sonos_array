@@ -1,31 +1,9 @@
 magic
 tech sky130A
-timestamp 1663355226
-<< error_p >>
-rect 886 634 287147 331584
+timestamp 1663486910
 use sonos_8x8  sonos_8x8_0
-array 0 249 1152 0 239 1384
-timestamp 1663275216
+array 0 234 1225 0 214 1513
+timestamp 1663485803
 transform 1 0 0 0 1 0
-box 0 0 1308 1442
-use sonos_cell_hshort  sonos_cell_hshort_0
-array 0 0 300 0 959 346
-timestamp 1663347420
-transform 1 0 0 0 1 0
-box -44 0 256 404
-use sonos_cell_hshort  sonos_cell_hshort_1
-array 0 0 -300 0 959 346
-timestamp 1663347420
-transform -1 0 288033 0 1 0
-box -44 0 256 404
-use sonos_cell_vshort  sonos_cell_vshort_0
-array 0 1999 144 0 0 58
-timestamp 1663354744
-transform 1 0 0 0 1 331814
-box 0 400 165 458
-use sonos_cell_vshort  sonos_cell_vshort_1
-array 0 1999 144 0 0 -58
-timestamp 1663354744
-transform 1 0 0 0 -1 404
-box 0 400 165 458
+box -40 -48 1308 1490
 << end >>
