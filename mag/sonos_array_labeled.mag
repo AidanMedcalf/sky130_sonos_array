@@ -1,0 +1,116 @@
+magic
+tech sky130A
+timestamp 1685135448
+<< error_p >>
+rect 575 1124 665 1168
+rect 719 1124 809 1168
+rect 863 1124 953 1168
+rect 1007 1124 1097 1168
+rect 1151 1124 1241 1168
+rect 1295 1124 1385 1168
+rect 1439 1124 1529 1168
+rect 1583 1124 1673 1168
+rect 575 1016 665 1060
+rect 719 1016 809 1060
+rect 863 1016 953 1060
+rect 1007 1016 1097 1060
+rect 1151 1016 1241 1060
+rect 1295 1016 1385 1060
+rect 1439 1016 1529 1060
+rect 1583 1016 1673 1060
+rect 575 778 665 822
+rect 719 778 809 822
+rect 863 778 953 822
+rect 1007 778 1097 822
+rect 1151 778 1241 822
+rect 1295 778 1385 822
+rect 1439 778 1529 822
+rect 1583 778 1673 822
+rect 575 670 665 714
+rect 719 670 809 714
+rect 863 670 953 714
+rect 1007 670 1097 714
+rect 1151 670 1241 714
+rect 1295 670 1385 714
+rect 1439 670 1529 714
+rect 1583 670 1673 714
+use sonos_array_orig  sonos_array_orig_0
+timestamp 1685114897
+transform 1 0 548 0 1 764
+box -548 -764 1700 1766
+<< labels >>
+flabel space 36 1893 81 1927 1 FreeSans 160 0 0 -104 PT0
+flabel space 36 1825 81 1859 1 FreeSans 160 0 0 -104 WLS0
+flabel space 36 1757 81 1791 1 FreeSans 160 0 0 -104 PT1
+flabel space 36 1547 81 1581 1 FreeSans 160 0 0 -104 PT2
+flabel space 36 1411 81 1445 1 FreeSans 160 0 0 -104 PT3
+flabel space 36 1201 81 1235 1 FreeSans 160 0 0 -104 PT4
+flabel space 36 1065 81 1099 1 FreeSans 160 0 0 -104 PT5
+flabel space 36 855 81 889 1 FreeSans 160 0 0 -104 PT6
+flabel space 36 719 81 753 1 FreeSans 160 0 0 -104 PT7
+flabel space 36 1689 81 1723 1 FreeSans 160 0 0 -104 WLS1
+flabel space 36 1479 81 1513 1 FreeSans 160 0 0 -104 WLS2
+flabel space 36 1343 81 1377 1 FreeSans 160 0 0 -104 WLS3
+flabel space 36 1133 81 1167 1 FreeSans 160 0 0 -104 WLS4
+flabel space 2167 1153 2212 1187 1 FreeSans 160 0 0 -104 WLS4
+flabel space 2167 1363 2212 1397 1 FreeSans 160 0 0 -104 WLS3
+flabel space 36 997 81 1031 1 FreeSans 160 0 0 -104 WLS5
+flabel space 2167 1017 2212 1051 1 FreeSans 160 0 0 -104 WLS5
+flabel space 36 787 81 821 1 FreeSans 160 0 0 -104 WLS6
+flabel space 2167 807 2212 841 1 FreeSans 160 0 0 -104 WLS6
+flabel space 36 651 81 685 1 FreeSans 160 0 0 -104 WLS7
+flabel space 2167 671 2212 705 1 FreeSans 160 0 0 -104 WLS7
+flabel space 2167 1777 2212 1811 1 FreeSans 160 0 0 -104 PT0
+flabel space 2167 1641 2212 1675 1 FreeSans 160 0 0 -104 PT1
+flabel space 2167 1431 2212 1465 1 FreeSans 160 0 0 -104 PT2
+flabel space 2167 1295 2212 1329 1 FreeSans 160 0 0 -104 PT3
+flabel space 2167 1085 2212 1119 1 FreeSans 160 0 0 -104 PT4
+flabel space 2167 949 2212 983 1 FreeSans 160 0 0 -104 PT5
+flabel space 2167 739 2212 773 1 FreeSans 160 0 0 -104 PT6
+flabel space 2167 603 2212 637 1 FreeSans 160 0 0 -104 PT7
+flabel space 2167 1919 2212 1953 1 FreeSans 160 0 0 -104 WL0
+flabel space 36 1615 81 1649 1 FreeSans 160 0 0 -104 WL1
+flabel space 2167 1573 2212 1607 1 FreeSans 160 0 0 -104 WL2
+flabel space 36 1269 81 1303 1 FreeSans 160 0 0 -104 WL3
+flabel space 2167 1227 2212 1261 1 FreeSans 160 0 0 -104 WL4
+flabel space 36 923 81 957 1 FreeSans 160 0 0 -104 WL5
+flabel space 2167 881 2212 915 1 FreeSans 160 0 0 -104 WL6
+flabel space 36 577 81 611 1 FreeSans 160 0 0 -104 WL7
+flabel space 2167 1845 2212 1879 1 FreeSans 160 0 0 -104 WLS0
+flabel space 2167 1709 2212 1743 1 FreeSans 160 0 0 -104 WLS1
+flabel space 2167 1499 2212 1533 1 FreeSans 160 0 0 -104 WLS2
+flabel metal1 457 2146 491 2180 1 FreeSans 192 0 0 0 VPB
+flabel space 41 2455 75 2489 1 FreeSans 192 0 0 -104 VNB
+flabel space 602 2449 638 2494 1 FreeSans 160 0 0 -104 BL0
+flabel space 602 36 638 81 1 FreeSans 160 0 0 -104 BL0
+flabel space 746 36 782 81 1 FreeSans 160 0 0 -104 BL1
+flabel space 746 2449 782 2494 1 FreeSans 160 0 0 -104 BL1
+flabel space 890 2449 926 2494 1 FreeSans 160 0 0 -104 BL2
+flabel space 890 36 926 81 1 FreeSans 160 0 0 -104 BL2
+flabel space 1034 36 1070 81 1 FreeSans 160 0 0 -104 BL3
+flabel space 1034 2449 1070 2494 1 FreeSans 160 0 0 -104 BL3
+flabel space 1178 2449 1214 2494 1 FreeSans 160 0 0 -104 BL4
+flabel space 1178 36 1214 81 1 FreeSans 160 0 0 -104 BL4
+flabel space 1322 36 1358 81 1 FreeSans 160 0 0 -104 BL5
+flabel space 1322 2449 1358 2494 1 FreeSans 160 0 0 -104 BL5
+flabel space 1466 2449 1502 2494 1 FreeSans 160 0 0 -104 BL6
+flabel space 1466 36 1502 81 1 FreeSans 160 0 0 -104 BL6
+flabel space 1610 36 1646 81 1 FreeSans 160 0 0 -104 BL7
+flabel space 1610 2449 1646 2494 1 FreeSans 160 0 0 -104 BL7
+flabel space 672 2449 708 2494 1 FreeSans 160 0 0 -104 SRC0
+flabel space 816 2449 852 2494 1 FreeSans 160 0 0 -104 SRC1
+flabel space 816 36 852 81 1 FreeSans 160 0 0 -104 SRC1
+flabel space 960 36 996 81 1 FreeSans 160 0 0 -104 SRC2
+flabel space 960 2449 996 2494 1 FreeSans 160 0 0 -104 SRC2
+flabel space 1104 2449 1140 2494 1 FreeSans 160 0 0 -104 SRC3
+flabel space 1104 36 1140 81 1 FreeSans 160 0 0 -104 SRC3
+flabel space 1248 36 1284 81 1 FreeSans 160 0 0 -104 SRC4
+flabel space 1248 2449 1284 2494 1 FreeSans 160 0 0 -104 SRC4
+flabel space 1392 2449 1428 2494 1 FreeSans 160 0 0 -104 SRC5
+flabel space 1392 36 1428 81 1 FreeSans 160 0 0 -104 SRC5
+flabel space 1536 36 1572 81 1 FreeSans 160 0 0 -104 SRC6
+flabel space 1536 2449 1572 2494 1 FreeSans 160 0 0 -104 SRC6
+flabel space 1680 2449 1716 2494 1 FreeSans 160 0 0 -104 SRC7
+flabel space 1680 36 1716 81 1 FreeSans 160 0 0 -104 SRC7
+flabel space 672 36 708 81 1 FreeSans 160 0 0 -104 SRC0
+<< end >>
