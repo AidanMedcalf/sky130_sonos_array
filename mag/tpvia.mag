@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1685658119
+timestamp 1685692190
 << error_p >>
 rect 0 188 400 200
 rect 0 12 12 188
@@ -17,6 +17,4 @@ rect 0 50 50 150
 rect 50 50 350 150
 rect 350 50 400 150
 rect 0 0 400 50
-<< labels >>
-flabel metal3 180 80 230 130 1 FreeSans 80 0 0 0 PADVIA
 << end >>

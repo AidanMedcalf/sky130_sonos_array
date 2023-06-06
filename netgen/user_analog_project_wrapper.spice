@@ -1,14 +1,28 @@
 * NGSPICE file created from user_analog_project_wrapper.ext - technology: sky130A
 
+.subckt sky130_fd_pr__res_xhigh_po_5p73_JY438B a_n573_50# a_n573_n482# w_n802_n711#
++ VSUBS
+X0 a_n573_50# a_n573_n482# VSUBS sky130_fd_pr__res_xhigh_po w=5.73 l=0.5
+.ends
+
+.subckt sky130_fd_bs_flash__special_sonosfet_star w_n436_n442# a_n33_36# dw_n436_n442#
++ a_22_n76# a_n84_n76#
+X0 a_22_n76# a_n33_36# a_n84_n76# w_n436_n442# sky130_fd_bs_flash__special_sonosfet_star ad=0.14 pd=1.52 as=0.14 ps=1.52 w=0.45 l=0.22
+.ends
+
+.subckt sonos_1t_iso G D VNB S B
+Xsky130_fd_bs_flash__special_sonosfet_star_0 B G VNB D S sky130_fd_bs_flash__special_sonosfet_star
+.ends
+
 .subckt sonos_cell w_n144_n252# a_n144_n130# dw_n144_n252# a_n90_n244# a_n90_102#
 + li_n144_n60# a_n144_42#
 X0 a_n90_102# a_n144_42# a_n90_n42# w_n144_n252# sky130_fd_pr__special_nfet_latch ad=0.45 pd=2.8 as=0.189 ps=1.32 w=0.9 l=0.3
 X1 a_n90_n42# a_n144_n130# a_n90_n244# w_n144_n252# sky130_fd_bs_flash__special_sonosfet_star ad=0.189 pd=1.32 as=0.513 ps=2.94 w=0.9 l=0.44
 .ends
 
-.subckt sonos_cell_mirrored sonos_cell_0/a_n144_n130# sonos_cell_0/a_n144_42# sonos_cell_1/dw_n144_n252#
-+ w_160_160# sonos_cell_1/a_n144_42# sonos_cell_0/li_n144_n60# sonos_cell_1/a_n144_n130#
-+ sonos_cell_1/a_n90_102# sonos_cell_1/a_n90_n244# sonos_cell_1/li_n144_n60#
+.subckt sonos_cell_mirrored sonos_cell_0/a_n144_n130# sonos_cell_0/a_n144_42# w_160_160#
++ sonos_cell_1/a_n144_42# sonos_cell_0/li_n144_n60# sonos_cell_1/a_n90_102# sonos_cell_1/dw_n144_n252#
++ sonos_cell_1/a_n144_n130# sonos_cell_1/a_n90_n244# sonos_cell_1/li_n144_n60#
 Xsonos_cell_0 w_160_160# sonos_cell_0/a_n144_n130# sonos_cell_1/dw_n144_n252# sonos_cell_1/a_n90_n244#
 + sonos_cell_1/a_n90_102# sonos_cell_0/li_n144_n60# sonos_cell_0/a_n144_42# sonos_cell
 Xsonos_cell_1 w_160_160# sonos_cell_1/a_n144_n130# sonos_cell_1/dw_n144_n252# sonos_cell_1/a_n90_n244#
@@ -16,70 +30,70 @@ Xsonos_cell_1 w_160_160# sonos_cell_1/a_n144_n130# sonos_cell_1/dw_n144_n252# so
 .ends
 
 .subckt sonos_8x8 w_n80_n96# dw_n80_n96#
-Xsonos_cell_mirrored_0[0|0] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[1|0] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[2|0] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[3|0] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[0|1] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[1|1] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[2|1] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[3|1] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[0|2] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[1|2] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[2|2] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[3|2] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[0|3] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[1|3] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[2|3] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[3|3] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[0|4] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[1|4] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[2|4] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[3|4] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[0|5] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[1|5] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[2|5] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[3|5] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[0|6] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[1|6] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[2|6] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[3|6] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[0|7] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[1|7] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[2|7] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
-Xsonos_cell_mirrored_0[3|7] w_n80_n96# w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96#
-+ w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[0|0] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[1|0] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[2|0] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[3|0] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[0|1] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[1|1] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[2|1] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[3|1] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[0|2] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[1|2] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[2|2] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[3|2] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[0|3] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[1|3] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[2|3] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[3|3] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[0|4] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[1|4] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[2|4] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[3|4] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[0|5] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[1|5] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[2|5] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[3|5] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[0|6] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[1|6] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[2|6] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[3|6] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[0|7] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[1|7] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[2|7] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
+Xsonos_cell_mirrored_0[3|7] w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96#
++ w_n80_n96# dw_n80_n96# w_n80_n96# w_n80_n96# w_n80_n96# sonos_cell_mirrored
 .ends
 
 .subckt sonos_array_50x50x64 w_n80_n96# sonos_8x8_0[9|9]/dw_n80_n96#
@@ -2688,10 +2702,26 @@ Xsonos_8x8_0[50|50] w_n80_n96# sonos_8x8_0[9|9]/dw_n80_n96# sonos_8x8
 
 .subckt sonos_endcap_tb dw_n408_n1786# m1_n300_n1886# w_n120_n1786# w_n408_n1360#
 + a_n408_n922# a_n354_n1046#
-X0 a_n354_n1046# a_n408_n922# a_n354_n1046# w_n408_n1360# sky130_fd_pr__nfet_01v8 ad=1.01 pd=5.84 as=0.45 ps=2.8 w=0.9 l=0.3
+X0 a_n354_n1046# a_n408_n922# a_n354_n1046# w_n408_n1360# sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.8 as=1.01 ps=5.84 w=0.9 l=0.3
 .ends
 
-.subckt sonos_array_orig w_n498_n930#
+.subckt sonos_array_orig sonos_endcap_lr_1[3]/a_n616_n202# sonos_endcap_lr_1[0]/a_n454_n406#
++ sonos_cell_2[2|7]/li_n144_n60# sonos_endcap_lr_2[1]/a_n616_n202# sonos_endcap_lr_2[0]/a_n616_28#
++ sonos_endcap_lr_1[3]/a_n454_n406# sonos_endcap_lr_2[1]/a_n616_28# sonos_endcap_lr_2[1]/a_n454_n406#
++ sonos_endcap_lr_2[2]/a_n616_28# sonos_endcap_lr_2[3]/a_n616_28# sonos_endcap_lr_1[1]/a_n616_n202#
++ sonos_cell_2[3|7]/li_n144_n60# sonos_cell_2[3|4]/a_n90_102# sonos_endcap_lr_1[1]/a_n454_n406#
++ sonos_cell_1[3|7]/li_n144_n60# sonos_cell_2[3|1]/a_n90_n244# sonos_endcap_lr_2[2]/a_n616_n202#
++ sonos_cell_2[3|6]/a_n90_n244# sonos_endcap_lr_2[2]/a_n454_n406# sonos_cell_2[3|1]/a_n90_102#
++ sonos_cell_1[2|7]/li_n144_n60# sonos_cell_2[3|0]/a_n90_n244# sonos_endcap_lr_1[2]/a_n616_n202#
++ sonos_cell_2[3|5]/a_n90_102# sonos_cell_2[0|7]/li_n144_n60# sonos_cell_2[3|3]/a_n90_n244#
++ sonos_cell_2[3|5]/a_n90_n244# sonos_endcap_lr_2[0]/a_n616_n202# sonos_cell_2[3|3]/a_n90_102#
++ w_n498_n930# sonos_endcap_lr_1[2]/a_n454_n406# sonos_endcap_lr_1[0]/a_n616_28# sonos_cell_2[3|7]/a_n90_102#
++ sonos_endcap_lr_1[1]/a_n616_28# dw_0_n64# sonos_cell_1[1|7]/li_n144_n60# sonos_endcap_lr_2[3]/a_n616_n202#
++ sonos_endcap_lr_1[2]/a_n616_28# sonos_cell_2[3|4]/a_n90_n244# sonos_endcap_lr_2[0]/a_n454_n406#
++ sonos_endcap_lr_1[3]/a_n616_28# sonos_cell_2[3|2]/a_n90_102# sonos_cell_2[3|2]/a_n90_n244#
++ sonos_endcap_lr_1[0]/a_n616_n202# sonos_cell_2[1|7]/li_n144_n60# sonos_cell_2[3|7]/a_n90_n244#
++ sonos_cell_2[3|6]/a_n90_102# sonos_cell_1[0|7]/li_n144_n60# sonos_cell_2[3|0]/a_n90_102#
++ sonos_endcap_lr_2[3]/a_n454_n406#
 Xsonos_endcap_tb_1[0] dw_0_n64# sonos_cell_2[3|0]/a_n90_n244# w_n498_n930# w_n498_n930#
 + sonos_array_corner_3/a_n72_n552# sonos_cell_2[3|0]/a_n90_102# sonos_endcap_tb
 Xsonos_endcap_tb_1[1] dw_0_n64# sonos_cell_2[3|1]/a_n90_n244# w_n498_n930# w_n498_n930#
@@ -2910,8 +2940,11 @@ Xsonos_cell_2[3|7] w_n498_n930# sonos_endcap_lr_2[0]/a_n72_28# dw_0_n64# sonos_c
 + sonos_cell
 .ends
 
-.subckt sonos_array_labeled VPB
-Xsonos_array_orig_0 VPB sonos_array_orig
+.subckt sonos_array_labeled WL1 WL0 PT7 PT6 PT5 PT4 PT3 PT2 PT1 PT0 VPB WLS7 WLS6
++ WLS5 BL1 WLS4 BL0 WLS3 WLS2 WLS1 WLS0 VNB SRC1 SRC0
+Xsonos_array_orig_0 WLS1 WL7 PT3 WLS2 WLS1 WL1 WLS3 WL2 WLS5 WLS7 WLS5 PT1 SRC4 WL5
++ PT0 BL1 WLS4 BL6 WL4 SRC1 PT2 BL0 WLS3 SRC5 PT7 BL3 BL5 WLS0 SRC3 VPB WL3 WLS6 SRC7
++ WLS4 VNB PT4 WLS6 WLS2 BL4 WL0 WLS0 SRC2 BL2 WLS7 PT5 BL7 SRC6 PT6 SRC0 WL6 sonos_array_orig
 .ends
 
 .subckt user_analog_project_wrapper gpio_analog[0] gpio_analog[10] gpio_analog[11]
@@ -3020,406 +3053,107 @@ Xsonos_array_orig_0 VPB sonos_array_orig
 + wbs_dat_o[30] wbs_dat_o[31] wbs_dat_o[3] wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6]
 + wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3]
 + wbs_stb_i wbs_we_i
-Xsonos_array_50x50x64_0 w_21434_30636# dw_21184_30386# sonos_array_50x50x64
-Xsonos_array_labeled_0[0|0] sonos_array_labeled_0[0|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|0] sonos_array_labeled_0[1|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|0] sonos_array_labeled_0[2|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|0] sonos_array_labeled_0[3|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|0] sonos_array_labeled_0[4|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|0] sonos_array_labeled_0[5|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|0] sonos_array_labeled_0[6|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|0] sonos_array_labeled_0[7|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|0] sonos_array_labeled_0[8|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|0] sonos_array_labeled_0[9|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|0] sonos_array_labeled_0[10|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|0] sonos_array_labeled_0[11|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|0] sonos_array_labeled_0[12|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|0] sonos_array_labeled_0[13|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|0] sonos_array_labeled_0[14|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|0] sonos_array_labeled_0[15|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|0] sonos_array_labeled_0[16|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|0] sonos_array_labeled_0[17|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|0] sonos_array_labeled_0[18|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|0] sonos_array_labeled_0[19|0]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[0|1] sonos_array_labeled_0[0|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|1] sonos_array_labeled_0[1|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|1] sonos_array_labeled_0[2|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|1] sonos_array_labeled_0[3|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|1] sonos_array_labeled_0[4|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|1] sonos_array_labeled_0[5|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|1] sonos_array_labeled_0[6|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|1] sonos_array_labeled_0[7|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|1] sonos_array_labeled_0[8|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|1] sonos_array_labeled_0[9|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|1] sonos_array_labeled_0[10|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|1] sonos_array_labeled_0[11|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|1] sonos_array_labeled_0[12|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|1] sonos_array_labeled_0[13|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|1] sonos_array_labeled_0[14|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|1] sonos_array_labeled_0[15|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|1] sonos_array_labeled_0[16|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|1] sonos_array_labeled_0[17|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|1] sonos_array_labeled_0[18|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|1] sonos_array_labeled_0[19|1]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[0|2] sonos_array_labeled_0[0|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|2] sonos_array_labeled_0[1|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|2] sonos_array_labeled_0[2|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|2] sonos_array_labeled_0[3|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|2] sonos_array_labeled_0[4|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|2] sonos_array_labeled_0[5|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|2] sonos_array_labeled_0[6|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|2] sonos_array_labeled_0[7|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|2] sonos_array_labeled_0[8|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|2] sonos_array_labeled_0[9|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|2] sonos_array_labeled_0[10|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|2] sonos_array_labeled_0[11|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|2] sonos_array_labeled_0[12|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|2] sonos_array_labeled_0[13|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|2] sonos_array_labeled_0[14|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|2] sonos_array_labeled_0[15|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|2] sonos_array_labeled_0[16|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|2] sonos_array_labeled_0[17|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|2] sonos_array_labeled_0[18|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|2] sonos_array_labeled_0[19|2]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[0|3] sonos_array_labeled_0[0|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|3] sonos_array_labeled_0[1|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|3] sonos_array_labeled_0[2|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|3] sonos_array_labeled_0[3|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|3] sonos_array_labeled_0[4|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|3] sonos_array_labeled_0[5|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|3] sonos_array_labeled_0[6|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|3] sonos_array_labeled_0[7|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|3] sonos_array_labeled_0[8|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|3] sonos_array_labeled_0[9|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|3] sonos_array_labeled_0[10|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|3] sonos_array_labeled_0[11|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|3] sonos_array_labeled_0[12|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|3] sonos_array_labeled_0[13|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|3] sonos_array_labeled_0[14|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|3] sonos_array_labeled_0[15|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|3] sonos_array_labeled_0[16|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|3] sonos_array_labeled_0[17|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|3] sonos_array_labeled_0[18|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|3] sonos_array_labeled_0[19|3]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[0|4] sonos_array_labeled_0[0|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|4] sonos_array_labeled_0[1|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|4] sonos_array_labeled_0[2|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|4] sonos_array_labeled_0[3|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|4] sonos_array_labeled_0[4|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|4] sonos_array_labeled_0[5|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|4] sonos_array_labeled_0[6|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|4] sonos_array_labeled_0[7|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|4] sonos_array_labeled_0[8|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|4] sonos_array_labeled_0[9|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|4] sonos_array_labeled_0[10|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|4] sonos_array_labeled_0[11|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|4] sonos_array_labeled_0[12|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|4] sonos_array_labeled_0[13|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|4] sonos_array_labeled_0[14|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|4] sonos_array_labeled_0[15|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|4] sonos_array_labeled_0[16|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|4] sonos_array_labeled_0[17|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|4] sonos_array_labeled_0[18|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|4] sonos_array_labeled_0[19|4]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[0|5] sonos_array_labeled_0[0|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|5] sonos_array_labeled_0[1|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|5] sonos_array_labeled_0[2|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|5] sonos_array_labeled_0[3|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|5] sonos_array_labeled_0[4|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|5] sonos_array_labeled_0[5|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|5] sonos_array_labeled_0[6|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|5] sonos_array_labeled_0[7|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|5] sonos_array_labeled_0[8|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|5] sonos_array_labeled_0[9|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|5] sonos_array_labeled_0[10|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|5] sonos_array_labeled_0[11|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|5] sonos_array_labeled_0[12|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|5] sonos_array_labeled_0[13|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|5] sonos_array_labeled_0[14|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|5] sonos_array_labeled_0[15|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|5] sonos_array_labeled_0[16|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|5] sonos_array_labeled_0[17|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|5] sonos_array_labeled_0[18|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|5] sonos_array_labeled_0[19|5]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[0|6] sonos_array_labeled_0[0|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|6] sonos_array_labeled_0[1|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|6] sonos_array_labeled_0[2|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|6] sonos_array_labeled_0[3|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|6] sonos_array_labeled_0[4|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|6] sonos_array_labeled_0[5|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|6] sonos_array_labeled_0[6|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|6] sonos_array_labeled_0[7|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|6] sonos_array_labeled_0[8|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|6] sonos_array_labeled_0[9|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|6] sonos_array_labeled_0[10|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|6] sonos_array_labeled_0[11|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|6] sonos_array_labeled_0[12|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|6] sonos_array_labeled_0[13|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|6] sonos_array_labeled_0[14|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|6] sonos_array_labeled_0[15|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|6] sonos_array_labeled_0[16|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|6] sonos_array_labeled_0[17|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|6] sonos_array_labeled_0[18|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|6] sonos_array_labeled_0[19|6]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[0|7] sonos_array_labeled_0[0|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|7] sonos_array_labeled_0[1|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|7] sonos_array_labeled_0[2|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|7] sonos_array_labeled_0[3|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|7] sonos_array_labeled_0[4|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|7] sonos_array_labeled_0[5|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|7] sonos_array_labeled_0[6|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|7] sonos_array_labeled_0[7|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|7] sonos_array_labeled_0[8|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|7] sonos_array_labeled_0[9|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|7] sonos_array_labeled_0[10|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|7] sonos_array_labeled_0[11|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|7] sonos_array_labeled_0[12|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|7] sonos_array_labeled_0[13|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|7] sonos_array_labeled_0[14|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|7] sonos_array_labeled_0[15|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|7] sonos_array_labeled_0[16|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|7] sonos_array_labeled_0[17|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|7] sonos_array_labeled_0[18|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|7] sonos_array_labeled_0[19|7]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[0|8] sonos_array_labeled_0[0|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|8] sonos_array_labeled_0[1|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|8] sonos_array_labeled_0[2|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|8] sonos_array_labeled_0[3|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|8] sonos_array_labeled_0[4|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|8] sonos_array_labeled_0[5|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|8] sonos_array_labeled_0[6|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|8] sonos_array_labeled_0[7|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|8] sonos_array_labeled_0[8|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|8] sonos_array_labeled_0[9|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|8] sonos_array_labeled_0[10|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|8] sonos_array_labeled_0[11|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|8] sonos_array_labeled_0[12|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|8] sonos_array_labeled_0[13|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|8] sonos_array_labeled_0[14|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|8] sonos_array_labeled_0[15|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|8] sonos_array_labeled_0[16|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|8] sonos_array_labeled_0[17|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|8] sonos_array_labeled_0[18|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|8] sonos_array_labeled_0[19|8]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[0|9] sonos_array_labeled_0[0|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|9] sonos_array_labeled_0[1|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|9] sonos_array_labeled_0[2|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|9] sonos_array_labeled_0[3|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|9] sonos_array_labeled_0[4|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|9] sonos_array_labeled_0[5|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|9] sonos_array_labeled_0[6|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|9] sonos_array_labeled_0[7|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|9] sonos_array_labeled_0[8|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|9] sonos_array_labeled_0[9|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|9] sonos_array_labeled_0[10|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|9] sonos_array_labeled_0[11|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|9] sonos_array_labeled_0[12|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|9] sonos_array_labeled_0[13|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|9] sonos_array_labeled_0[14|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|9] sonos_array_labeled_0[15|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|9] sonos_array_labeled_0[16|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|9] sonos_array_labeled_0[17|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|9] sonos_array_labeled_0[18|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|9] sonos_array_labeled_0[19|9]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[0|10] sonos_array_labeled_0[0|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|10] sonos_array_labeled_0[1|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|10] sonos_array_labeled_0[2|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|10] sonos_array_labeled_0[3|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|10] sonos_array_labeled_0[4|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|10] sonos_array_labeled_0[5|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|10] sonos_array_labeled_0[6|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|10] sonos_array_labeled_0[7|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|10] sonos_array_labeled_0[8|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|10] sonos_array_labeled_0[9|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|10] sonos_array_labeled_0[10|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|10] sonos_array_labeled_0[11|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|10] sonos_array_labeled_0[12|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|10] sonos_array_labeled_0[13|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|10] sonos_array_labeled_0[14|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|10] sonos_array_labeled_0[15|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|10] sonos_array_labeled_0[16|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|10] sonos_array_labeled_0[17|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|10] sonos_array_labeled_0[18|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|10] sonos_array_labeled_0[19|10]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[0|11] sonos_array_labeled_0[0|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|11] sonos_array_labeled_0[1|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|11] sonos_array_labeled_0[2|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|11] sonos_array_labeled_0[3|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|11] sonos_array_labeled_0[4|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|11] sonos_array_labeled_0[5|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|11] sonos_array_labeled_0[6|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|11] sonos_array_labeled_0[7|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|11] sonos_array_labeled_0[8|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|11] sonos_array_labeled_0[9|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|11] sonos_array_labeled_0[10|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|11] sonos_array_labeled_0[11|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|11] sonos_array_labeled_0[12|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|11] sonos_array_labeled_0[13|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|11] sonos_array_labeled_0[14|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|11] sonos_array_labeled_0[15|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|11] sonos_array_labeled_0[16|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|11] sonos_array_labeled_0[17|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|11] sonos_array_labeled_0[18|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|11] sonos_array_labeled_0[19|11]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[0|12] sonos_array_labeled_0[0|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|12] sonos_array_labeled_0[1|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|12] sonos_array_labeled_0[2|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|12] sonos_array_labeled_0[3|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|12] sonos_array_labeled_0[4|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|12] sonos_array_labeled_0[5|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|12] sonos_array_labeled_0[6|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|12] sonos_array_labeled_0[7|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|12] sonos_array_labeled_0[8|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|12] sonos_array_labeled_0[9|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|12] sonos_array_labeled_0[10|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|12] sonos_array_labeled_0[11|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|12] sonos_array_labeled_0[12|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|12] sonos_array_labeled_0[13|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|12] sonos_array_labeled_0[14|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|12] sonos_array_labeled_0[15|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|12] sonos_array_labeled_0[16|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|12] sonos_array_labeled_0[17|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|12] sonos_array_labeled_0[18|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|12] sonos_array_labeled_0[19|12]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[0|13] sonos_array_labeled_0[0|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|13] sonos_array_labeled_0[1|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|13] sonos_array_labeled_0[2|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|13] sonos_array_labeled_0[3|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|13] sonos_array_labeled_0[4|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|13] sonos_array_labeled_0[5|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|13] sonos_array_labeled_0[6|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|13] sonos_array_labeled_0[7|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|13] sonos_array_labeled_0[8|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|13] sonos_array_labeled_0[9|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|13] sonos_array_labeled_0[10|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|13] sonos_array_labeled_0[11|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|13] sonos_array_labeled_0[12|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|13] sonos_array_labeled_0[13|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|13] sonos_array_labeled_0[14|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|13] sonos_array_labeled_0[15|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|13] sonos_array_labeled_0[16|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|13] sonos_array_labeled_0[17|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|13] sonos_array_labeled_0[18|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|13] sonos_array_labeled_0[19|13]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[0|14] sonos_array_labeled_0[0|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|14] sonos_array_labeled_0[1|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|14] sonos_array_labeled_0[2|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|14] sonos_array_labeled_0[3|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|14] sonos_array_labeled_0[4|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|14] sonos_array_labeled_0[5|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|14] sonos_array_labeled_0[6|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|14] sonos_array_labeled_0[7|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|14] sonos_array_labeled_0[8|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|14] sonos_array_labeled_0[9|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|14] sonos_array_labeled_0[10|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|14] sonos_array_labeled_0[11|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|14] sonos_array_labeled_0[12|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|14] sonos_array_labeled_0[13|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|14] sonos_array_labeled_0[14|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|14] sonos_array_labeled_0[15|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|14] sonos_array_labeled_0[16|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|14] sonos_array_labeled_0[17|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|14] sonos_array_labeled_0[18|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|14] sonos_array_labeled_0[19|14]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[0|15] sonos_array_labeled_0[0|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|15] sonos_array_labeled_0[1|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|15] sonos_array_labeled_0[2|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|15] sonos_array_labeled_0[3|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|15] sonos_array_labeled_0[4|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|15] sonos_array_labeled_0[5|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|15] sonos_array_labeled_0[6|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|15] sonos_array_labeled_0[7|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|15] sonos_array_labeled_0[8|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|15] sonos_array_labeled_0[9|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|15] sonos_array_labeled_0[10|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|15] sonos_array_labeled_0[11|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|15] sonos_array_labeled_0[12|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|15] sonos_array_labeled_0[13|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|15] sonos_array_labeled_0[14|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|15] sonos_array_labeled_0[15|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|15] sonos_array_labeled_0[16|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|15] sonos_array_labeled_0[17|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|15] sonos_array_labeled_0[18|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|15] sonos_array_labeled_0[19|15]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[0|16] sonos_array_labeled_0[0|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|16] sonos_array_labeled_0[1|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|16] sonos_array_labeled_0[2|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|16] sonos_array_labeled_0[3|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|16] sonos_array_labeled_0[4|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|16] sonos_array_labeled_0[5|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|16] sonos_array_labeled_0[6|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|16] sonos_array_labeled_0[7|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|16] sonos_array_labeled_0[8|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|16] sonos_array_labeled_0[9|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|16] sonos_array_labeled_0[10|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|16] sonos_array_labeled_0[11|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|16] sonos_array_labeled_0[12|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|16] sonos_array_labeled_0[13|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|16] sonos_array_labeled_0[14|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|16] sonos_array_labeled_0[15|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|16] sonos_array_labeled_0[16|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|16] sonos_array_labeled_0[17|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|16] sonos_array_labeled_0[18|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|16] sonos_array_labeled_0[19|16]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[0|17] sonos_array_labeled_0[0|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|17] sonos_array_labeled_0[1|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|17] sonos_array_labeled_0[2|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|17] sonos_array_labeled_0[3|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|17] sonos_array_labeled_0[4|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|17] sonos_array_labeled_0[5|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|17] sonos_array_labeled_0[6|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|17] sonos_array_labeled_0[7|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|17] sonos_array_labeled_0[8|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|17] sonos_array_labeled_0[9|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|17] sonos_array_labeled_0[10|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|17] sonos_array_labeled_0[11|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|17] sonos_array_labeled_0[12|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|17] sonos_array_labeled_0[13|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|17] sonos_array_labeled_0[14|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|17] sonos_array_labeled_0[15|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|17] sonos_array_labeled_0[16|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|17] sonos_array_labeled_0[17|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|17] sonos_array_labeled_0[18|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|17] sonos_array_labeled_0[19|17]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[0|18] sonos_array_labeled_0[0|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|18] sonos_array_labeled_0[1|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|18] sonos_array_labeled_0[2|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|18] sonos_array_labeled_0[3|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|18] sonos_array_labeled_0[4|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|18] sonos_array_labeled_0[5|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|18] sonos_array_labeled_0[6|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|18] sonos_array_labeled_0[7|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|18] sonos_array_labeled_0[8|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|18] sonos_array_labeled_0[9|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|18] sonos_array_labeled_0[10|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|18] sonos_array_labeled_0[11|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|18] sonos_array_labeled_0[12|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|18] sonos_array_labeled_0[13|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|18] sonos_array_labeled_0[14|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|18] sonos_array_labeled_0[15|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|18] sonos_array_labeled_0[16|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|18] sonos_array_labeled_0[17|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|18] sonos_array_labeled_0[18|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|18] sonos_array_labeled_0[19|18]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[0|19] sonos_array_labeled_0[0|19]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[1|19] sonos_array_labeled_0[1|19]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[2|19] sonos_array_labeled_0[2|19]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[3|19] sonos_array_labeled_0[3|19]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[4|19] sonos_array_labeled_0[4|19]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[5|19] sonos_array_labeled_0[5|19]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[6|19] sonos_array_labeled_0[6|19]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[7|19] sonos_array_labeled_0[7|19]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[8|19] sonos_array_labeled_0[8|19]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[9|19] sonos_array_labeled_0[9|19]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[10|19] sonos_array_labeled_0[10|19]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[11|19] sonos_array_labeled_0[11|19]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[12|19] sonos_array_labeled_0[12|19]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[13|19] sonos_array_labeled_0[13|19]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[14|19] sonos_array_labeled_0[14|19]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[15|19] sonos_array_labeled_0[15|19]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[16|19] sonos_array_labeled_0[16|19]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[17|19] sonos_array_labeled_0[17|19]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[18|19] sonos_array_labeled_0[18|19]/VPB sonos_array_labeled
-Xsonos_array_labeled_0[19|19] sonos_array_labeled_0[19|19]/VPB sonos_array_labeled
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_8 m1_379680_149580# sonos_1t_iso_7/B sonos_1t_iso_7/VNB
++ vssa1 sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_9 m1_367680_149580# D sonos_1t_iso_7/VNB vssa1
++ sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsonos_1t_iso_11 G D sonos_1t_iso_11/VNB S sonos_1t_iso_11/B sonos_1t_iso
+Xsonos_1t_iso_10 G D sonos_1t_iso_10/VNB S sonos_1t_iso_10/B sonos_1t_iso
+Xsonos_array_50x50x64_0 w_189206_295606# dw_189000_295400# sonos_array_50x50x64
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_20 m1_427680_149580# G sonos_1t_iso_15/VNB
++ vssa1 sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsonos_1t_iso_12 G D sonos_1t_iso_12/VNB S sonos_1t_iso_12/B sonos_1t_iso
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_21 m1_415680_149580# S sonos_1t_iso_15/VNB
++ vssa1 sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_10 m1_355680_149580# G sonos_1t_iso_7/VNB
++ vssa1 sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsonos_1t_iso_13 G D sonos_1t_iso_13/VNB S sonos_1t_iso_13/B sonos_1t_iso
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_22 m1_451680_165580# sonos_1t_iso_14/B sonos_1t_iso_14/VNB
++ vssa1 sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsonos_1t_iso_14 G D sonos_1t_iso_14/VNB S sonos_1t_iso_14/B sonos_1t_iso
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_23 m1_451680_149580# sonos_1t_iso_15/B sonos_1t_iso_15/VNB
++ vssa1 sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_11 m1_343680_149580# S sonos_1t_iso_7/VNB
++ vssa1 sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_12 m1_415680_133580# S sonos_1t_iso_13/VNB
++ vssa1 sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsonos_1t_iso_15 G D sonos_1t_iso_15/VNB S sonos_1t_iso_15/B sonos_1t_iso
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_13 m1_427680_133580# G sonos_1t_iso_13/VNB
++ vssa1 sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_14 m1_439680_133580# D sonos_1t_iso_13/VNB
++ vssa1 sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_15 m1_451680_133580# sonos_1t_iso_13/B sonos_1t_iso_13/VNB
++ vssa1 sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_16 m1_415680_165580# S sonos_1t_iso_14/VNB
++ vssa1 sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_17 m1_427680_165580# G sonos_1t_iso_14/VNB
++ vssa1 sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_18 m1_439680_165580# D sonos_1t_iso_14/VNB
++ vssa1 sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_19 m1_439680_149580# D sonos_1t_iso_15/VNB
++ vssa1 sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsonos_1t_iso_0 sonos_1t_iso_0/G sonos_1t_iso_0/D sonos_1t_iso_0/VNB sonos_1t_iso_0/S
++ sonos_1t_iso_0/B sonos_1t_iso
+Xsonos_1t_iso_1 G D sonos_1t_iso_1/VNB S sonos_1t_iso_1/B sonos_1t_iso
+Xsonos_1t_iso_2 G D sonos_1t_iso_2/VNB S sonos_1t_iso_2/B sonos_1t_iso
+Xsonos_1t_iso_3 G D sonos_1t_iso_3/VNB S sonos_1t_iso_3/B sonos_1t_iso
+Xsonos_1t_iso_4 G D sonos_1t_iso_4/VNB S sonos_1t_iso_4/B sonos_1t_iso
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_0 m1_367680_165580# D sonos_1t_iso_6/VNB vssa1
++ sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsonos_1t_iso_5 G D sonos_1t_iso_5/VNB S sonos_1t_iso_5/B sonos_1t_iso
+Xsonos_1t_iso_6 G D sonos_1t_iso_6/VNB S sonos_1t_iso_6/B sonos_1t_iso
+Xsonos_1t_iso_7 G D sonos_1t_iso_7/VNB S sonos_1t_iso_7/B sonos_1t_iso
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_2 m1_355680_133580# G sonos_1t_iso_1/VNB vssa1
++ sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_1 m1_367680_133580# D sonos_1t_iso_1/VNB vssa1
++ sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsonos_array_labeled_0 sonos_array_labeled_0/WL1 sonos_array_labeled_0/WL0 sonos_array_labeled_0/PT7
++ sonos_array_labeled_0/PT6 sonos_array_labeled_0/PT5 sonos_array_labeled_0/PT4 sonos_array_labeled_0/PT3
++ sonos_array_labeled_0/PT2 sonos_array_labeled_0/PT1 sonos_array_labeled_0/PT0 sonos_array_labeled_0/VPB
++ sonos_array_labeled_0/PT7 sonos_array_labeled_0/PT6 sonos_array_labeled_0/PT5 sonos_array_labeled_0/BL1
++ sonos_array_labeled_0/PT4 sonos_array_labeled_0/BL0 sonos_array_labeled_0/PT3 sonos_array_labeled_0/PT2
++ sonos_array_labeled_0/PT1 sonos_array_labeled_0/PT0 sonos_array_labeled_0/VNB sonos_array_labeled_0/SRC1
++ sonos_array_labeled_0/SRC0 sonos_array_labeled
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_3 m1_379680_165580# sonos_1t_iso_6/B sonos_1t_iso_6/VNB
++ vssa1 sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsonos_1t_iso_8 sonos_1t_iso_8/G sonos_1t_iso_8/D sonos_1t_iso_8/VNB sonos_1t_iso_8/S
++ sonos_1t_iso_8/B sonos_1t_iso
+Xsonos_array_labeled_1 sonos_array_labeled_1/WL1 sonos_array_labeled_1/WL0 sonos_array_labeled_1/PT7
++ sonos_array_labeled_1/PT6 sonos_array_labeled_1/PT5 sonos_array_labeled_1/PT4 sonos_array_labeled_1/PT3
++ sonos_array_labeled_1/PT2 sonos_array_labeled_1/PT1 sonos_array_labeled_1/PT0 sonos_array_labeled_1/VPB
++ sonos_array_labeled_1/PT7 sonos_array_labeled_1/PT6 sonos_array_labeled_1/PT5 sonos_array_labeled_1/BL1
++ sonos_array_labeled_1/PT4 sonos_array_labeled_1/BL0 sonos_array_labeled_1/PT3 sonos_array_labeled_1/PT2
++ sonos_array_labeled_1/PT1 sonos_array_labeled_1/PT0 sonos_array_labeled_1/VNB sonos_array_labeled_1/SRC1
++ sonos_array_labeled_1/SRC0 sonos_array_labeled
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_4 m1_343680_133580# S sonos_1t_iso_1/VNB vssa1
++ sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsonos_1t_iso_9 G D sonos_1t_iso_9/VNB S sonos_1t_iso_9/B sonos_1t_iso
+Xsonos_array_labeled_2 sonos_array_labeled_2/WL1 sonos_array_labeled_2/WL0 sonos_array_labeled_2/PT7
++ sonos_array_labeled_2/PT6 sonos_array_labeled_2/PT5 sonos_array_labeled_2/PT4 sonos_array_labeled_2/PT3
++ sonos_array_labeled_2/PT2 sonos_array_labeled_2/PT1 sonos_array_labeled_2/PT0 sonos_array_labeled_2/VPB
++ sonos_array_labeled_2/PT7 sonos_array_labeled_2/PT6 sonos_array_labeled_2/PT5 sonos_array_labeled_2/BL1
++ sonos_array_labeled_2/PT4 sonos_array_labeled_2/BL0 sonos_array_labeled_2/PT3 sonos_array_labeled_2/PT2
++ sonos_array_labeled_2/PT1 sonos_array_labeled_2/PT0 sonos_array_labeled_2/VNB sonos_array_labeled_2/SRC1
++ sonos_array_labeled_2/SRC0 sonos_array_labeled
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_5 m1_355680_165580# G sonos_1t_iso_6/VNB vssa1
++ sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsonos_array_labeled_3 sonos_array_labeled_3/WL1 sonos_array_labeled_3/WL0 sonos_array_labeled_3/PT7
++ sonos_array_labeled_3/PT6 sonos_array_labeled_3/PT5 sonos_array_labeled_3/PT4 sonos_array_labeled_3/PT3
++ sonos_array_labeled_3/PT2 sonos_array_labeled_3/PT1 sonos_array_labeled_3/PT0 sonos_array_labeled_3/VPB
++ sonos_array_labeled_3/PT7 sonos_array_labeled_3/PT6 sonos_array_labeled_3/PT5 sonos_array_labeled_3/BL1
++ sonos_array_labeled_3/PT4 sonos_array_labeled_3/BL0 sonos_array_labeled_3/PT3 sonos_array_labeled_3/PT2
++ sonos_array_labeled_3/PT1 sonos_array_labeled_3/PT0 sonos_array_labeled_3/VNB sonos_array_labeled_3/SRC1
++ sonos_array_labeled_3/SRC0 sonos_array_labeled
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_6 m1_343680_165580# S sonos_1t_iso_6/VNB vssa1
++ sky130_fd_pr__res_xhigh_po_5p73_JY438B
+Xsonos_array_labeled_4 sonos_array_labeled_4/WL1 sonos_array_labeled_4/WL0 sonos_array_labeled_4/PT7
++ sonos_array_labeled_4/PT6 sonos_array_labeled_4/PT5 sonos_array_labeled_4/PT4 sonos_array_labeled_4/PT3
++ sonos_array_labeled_4/PT2 sonos_array_labeled_4/PT1 sonos_array_labeled_4/PT0 sonos_array_labeled_4/VPB
++ sonos_array_labeled_4/PT7 sonos_array_labeled_4/PT6 sonos_array_labeled_4/PT5 sonos_array_labeled_4/BL1
++ sonos_array_labeled_4/PT4 sonos_array_labeled_4/BL0 sonos_array_labeled_4/PT3 sonos_array_labeled_4/PT2
++ sonos_array_labeled_4/PT1 sonos_array_labeled_4/PT0 sonos_array_labeled_4/VNB sonos_array_labeled_4/SRC1
++ sonos_array_labeled_4/SRC0 sonos_array_labeled
+Xsky130_fd_pr__res_xhigh_po_5p73_JY438B_7 m1_379680_133580# sonos_1t_iso_1/B sonos_1t_iso_1/VNB
++ vssa1 sky130_fd_pr__res_xhigh_po_5p73_JY438B
 .ends
 
