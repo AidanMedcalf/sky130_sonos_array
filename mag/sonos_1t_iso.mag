@@ -1,8 +1,6 @@
 magic
 tech sky130A
-timestamp 1686033289
-<< error_s >>
-rect 245 223 267 268
+timestamp 1686079789
 << dnwell >>
 rect -2 0 514 522
 << nwell >>
@@ -71,9 +69,9 @@ rect 495 -116 630 -98
 << metal1 >>
 rect 238 283 274 308
 use sky130_fd_bs_flash__special_sonosfet_star  sky130_fd_bs_flash__special_sonosfet_star_0
-timestamp 1686033289
+timestamp 1686079789
 transform 1 0 256 0 1 261
-box -258 -261 258 261
+box -218 -221 218 221
 << labels >>
 flabel metal1 238 283 274 308 1 FreeSans 144 0 0 -64 G
 flabel metal1 220 239 237 253 1 FreeSans 144 0 0 -80 S

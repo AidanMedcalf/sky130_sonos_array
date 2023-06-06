@@ -1,18 +1,16 @@
 magic
 tech sky130A
-timestamp 1686033482
+timestamp 1686079789
 << error_s >>
-rect 40 484 264 524
-rect 40 80 380 484
-rect 40 40 264 80
+rect 224 80 380 484
 use sonos_cell  sonos_cell_0
-timestamp 1686033289
+timestamp 1686079789
 transform 1 0 152 0 1 206
-box -112 -166 228 174
+box -72 -126 228 174
 use sonos_cell  sonos_cell_1
-timestamp 1686033289
+timestamp 1686079789
 transform 1 0 152 0 -1 358
-box -112 -166 228 174
+box -72 -126 228 174
 << properties >>
 string FIXED_BBOX 80 80 240 484
 << end >>

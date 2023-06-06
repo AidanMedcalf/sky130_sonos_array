@@ -1,11 +1,9 @@
 magic
 tech sky130A
-timestamp 1686033289
+timestamp 1686079789
 << error_p >>
-rect -72 149 72 174
-rect -112 109 112 149
-rect -112 -126 228 109
-rect -112 -166 112 -126
+rect -72 109 72 174
+rect 72 -126 228 109
 << dnwell >>
 rect -72 -126 72 109
 << npd >>
